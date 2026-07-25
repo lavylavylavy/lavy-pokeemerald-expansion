@@ -246,8 +246,427 @@ const struct SpeciesInfo gSpeciesInfo[] =
         //.perfectIVCount = NUM_STATS,
     },
     */
-};
 
+};
+[SPECIES_PETILIL_REGION] =
+    {
+        .baseHP        = 60,
+        .baseAttack    = 50,
+        .baseDefense   = 50,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 50,
+        .types = MON_TYPES(TYPE_GHOST, TYPE_FAIRY),
+        .catchRate = 190,
+        .expYield = 56,
+        .evYield_SpAttack = 1,
+        .itemRare = ITEM_ABSORB_BULB,
+        .genderRatio = MON_FEMALE,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
+        .abilities = { ABILITY_DANCER, ABILITY_OWN_TEMPO, ABILITY_MOODY },
+        .bodyColor = BODY_COLOR_PURPLE,
+        .speciesName = _("PETILIL"),
+        .cryId = CRY_PETILIL,
+        .natDexNum = NATIONAL_DEX_PETILIL,
+        .categoryName = _("BABY ONION"),
+        .height = 5,
+        .weight = 66,
+        .description = COMPOUND_STRING(
+            "By pruning the leaves on its head with\n"
+            "regularity, this Pokémon can be grown\n"
+            "into a fine plump shape. These bitter\n"
+            "leaves refresh those who eat them."),
+        .pokemonScale = 432,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Petilil,
+        .frontPicSize = MON_COORDS_SIZE(32, 48),
+        .frontPicYOffset = 12,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 25),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 20),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
+        .enemyMonElevation = 7,
+        .backPic = gMonBackPic_Petilil,
+        .backPicSize = MON_COORDS_SIZE(40, 56),
+        .backPicYOffset = 9,
+        .backAnimId = BACK_ANIM_V_STRETCH,
+        .palette = gMonPalette_Petilil,
+        .shinyPalette = gMonShinyPalette_Petilil,
+        .iconSprite = gMonIcon_Petilil,
+        .iconPalIndex = 1,
+        .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
+        SHADOW(-2, 6, SHADOW_SIZE_S)
+        FOOTPRINT(Petilil)
+        OVERWORLD(
+            sPicTable_Petilil,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Petilil,
+            gShinyOverworldPalette_Petilil
+        )
+        .levelUpLearnset = sPetililLevelUpLearnset,
+        .teachableLearnset = sPetililTeachableLearnset,
+        .eggMoveLearnset = sPetililEggMoveLearnset,
+        .formSpeciesIdTable = sPetililFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SHINY_STONE, SPECIES_LILLIGANT_REGION_FEMME}
+                            #if P_HISUIAN_FORMS
+                                ,{EVO_ITEM, ITEM_MOON_STONE, SPECIES_LILLIGANT_REGION_MASC}
+                            #endif
+                            ),
+    },
+[SPECIES_LILLIGANT_REGION_FEMME] =
+    {
+        .baseHP        = 70,
+        .baseAttack    = 70,
+        .baseDefense   = 70,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 130,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_GHOST, TYPE_FIGHTING),
+        .catchRate = 75,
+        .expYield = 168,
+        .evYield_SpAttack = 2,
+        .genderRatio = MON_FEMALE,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
+        .abilities = { ABILITY_DANCER, ABILITY_CUTE_CHARM, ABILITY_SCRAPPY },
+        .bodyColor = BODY_COLOR_PURPLE,
+        .speciesName = _("LILLIGANT"),
+        .cryId = CRY_LILLIGANT,
+        .natDexNum = NATIONAL_DEX_LILLIGANT,
+        .categoryName = _("LIPSTICK"),
+        .height = 11,
+        .weight = 103,
+        .description = COMPOUND_STRING(
+            "Even among LILLIGANT from other\n"
+            "regions, those from REGION are\n"
+            "unparalleled in beauty. They share\n"
+            "secret techniques with one another."),
+        .pokemonScale = 320,
+        .pokemonOffset = 7,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Lilligant,
+        .frontPicSize = MON_COORDS_SIZE(56, 64),
+        .frontPicYOffset = 1,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 20),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_Lilligant,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 8,
+        .backAnimId = BACK_ANIM_SHRINK_GROW,
+        .palette = gMonPalette_Lilligant,
+        .shinyPalette = gMonShinyPalette_Lilligant,
+        .iconSprite = gMonIcon_Lilligant,
+        .iconPalIndex = 1,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-2, 13, SHADOW_SIZE_M)
+        FOOTPRINT(Lilligant)
+        OVERWORLD(
+            sPicTable_Lilligant,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Lilligant,
+            gShinyOverworldPalette_Lilligant
+        )
+        .levelUpLearnset = sLilligantLevelUpLearnset,
+        .teachableLearnset = sLilligantTeachableLearnset,
+        .formSpeciesIdTable = sLilligantFormSpeciesIdTable,
+    },
+[SPECIES_LILLIGANT_REGION_MASC] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 100,
+        .baseDefense   = 80,
+        .baseSpeed     = 120,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_GHOST, TYPE_FIGHTING),
+        .catchRate = 75,
+        .expYield = 168,
+        .evYield_SpAttack = 2,
+        .genderRatio = MON_FEMALE,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
+        .abilities = { ABILITY_DANCER, ABILITY_SOLID_ROCK, ABILITY_COSTAR },
+        .bodyColor = BODY_COLOR_PURPLE,
+        .speciesName = _("LILLIGANT"),
+        .cryId = CRY_LILLIGANT,
+        .natDexNum = NATIONAL_DEX_LILLIGANT,
+        .categoryName = _("LITHOPS"),
+        .height = 12,
+        .weight = 192,
+        .description = COMPOUND_STRING(
+            "It's fairly reclusive and rarely seen\n"
+            "outside of flowery meadows in the company\n"
+            "of other LILLIGANT. It is very doting\n"
+            "of the one it chooses as its partner."),
+        .pokemonScale = 320,
+        .pokemonOffset = 7,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_LilligantHisui,
+        .frontPicSize = MON_COORDS_SIZE(56, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_LilligantHisui,
+        .backPicSize = MON_COORDS_SIZE(56, 56),
+        .backPicYOffset = 5,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_LilligantHisui,
+        .shinyPalette = gMonShinyPalette_LilligantHisui,
+        .iconSprite = gMonIcon_LilligantHisui,
+        .iconPalIndex = 1,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-3, 13, SHADOW_SIZE_S)
+        FOOTPRINT(Lilligant)
+        OVERWORLD(
+            sPicTable_LilligantHisui,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_LilligantHisui,
+            gShinyOverworldPalette_LilligantHisui
+        )
+        .levelUpLearnset = sLilligantHisuiLevelUpLearnset,
+        .teachableLearnset = sLilligantHisuiTeachableLearnset,
+        .formSpeciesIdTable = sLilligantFormSpeciesIdTable,
+    },
+    [SPECIES_SNIVY_REGION] =
+    {
+        .baseHP        = 57,
+        .baseAttack    = 50,
+        .baseDefense   = 60,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 63,
+        .baseSpDefense = 45,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_GROUND),
+        .catchRate = 45,
+        .expYield = 62,
+        .evYield_Speed = 1,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_GRASS),
+        .abilities = { ABILITY_OVERGROW, ABILITY_CORROSION, ABILITY_CONDESCEND },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("SNIVY"),
+        .cryId = CRY_SNIVY,
+        .natDexNum = NATIONAL_DEX_SNIVY,
+        .categoryName = _("Grass Snake"),
+        .height = 6,
+        .weight = 81,
+        .description = COMPOUND_STRING(
+            "It is very intelligent and calm.\n"
+            "Being exposed to lots of sunlight makes\n"
+            "its movements swifter. When they are\n"
+            "not feeling well, their tails droop."),
+        .pokemonScale = 422,
+        .pokemonOffset = 15,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Snivy,
+        .frontPicSize = MON_COORDS_SIZE(48, 40),
+        .frontPicYOffset = 12,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 1),
+            ANIMCMD_FRAME(1, 36),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_V_STRETCH,
+        .backPic = gMonBackPic_Snivy,
+        .backPicSize = MON_COORDS_SIZE(56, 48),
+        .backPicYOffset = 11,
+        .backAnimId = BACK_ANIM_H_SLIDE,
+        .palette = gMonPalette_Snivy,
+        .shinyPalette = gMonShinyPalette_Snivy,
+        .iconSprite = gMonIcon_Snivy,
+        .iconPalIndex = 1,
+        .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
+        SHADOW(-1, 1, SHADOW_SIZE_S)
+        FOOTPRINT(Snivy)
+        OVERWORLD(
+            sPicTable_Snivy,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Snivy,
+            gShinyOverworldPalette_Snivy
+        )
+        .levelUpLearnset = sSnivyLevelUpLearnset,
+        .teachableLearnset = sSnivyTeachableLearnset,
+        .eggMoveLearnset = sSnivyEggMoveLearnset,
+        .formSpeciesIdTable = sSnivyFormSpeciesIdTable
+        .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_SERVINE_REGION}),
+    },
+
+    [SPECIES_SERVINE_REGION] =
+    {
+        .baseHP        = 83,
+        .baseAttack    = 60,
+        .baseDefense   = 77,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_GROUND),
+        .catchRate = 45,
+        .expYield = 145,
+        .evYield_Speed = 2,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_GRASS),
+        .abilities = { ABILITY_OVERGROW, ABILITY_CORROSION, ABILITY_CONDESCEND },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Servine"),
+        .cryId = CRY_SERVINE,
+        .natDexNum = NATIONAL_DEX_SERVINE,
+        .categoryName = _("Grass Snake"),
+        .height = 8,
+        .weight = 160,
+        .description = COMPOUND_STRING(
+            "When it gets dirty, its leaves can't be\n"
+            "used in photosynthesis, so it always keeps\n"
+            "clean. They avoid attacks by sinking into\n"
+            "the shadows of thick foliage."),
+        .pokemonScale = 366,
+        .pokemonOffset = 9,
+        .trainerScale = 257,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Servine,
+        .frontPicSize = MON_COORDS_SIZE(48, 56),
+        .frontPicYOffset = 7,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 50),
+        ),
+        .frontAnimId = ANIM_V_STRETCH,
+        .backPic = gMonBackPic_Servine,
+        .backPicSize = MON_COORDS_SIZE(48, 64),
+        .backPicYOffset = 5,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
+        .palette = gMonPalette_Servine,
+        .shinyPalette = gMonShinyPalette_Servine,
+        .iconSprite = gMonIcon_Servine,
+        .iconPalIndex = 1,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-2, 7, SHADOW_SIZE_S)
+        FOOTPRINT(Servine)
+        OVERWORLD(
+            sPicTable_Servine,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Servine,
+            gShinyOverworldPalette_Servine
+        )
+        .levelUpLearnset = sServineLevelUpLearnset,
+        .teachableLearnset = sServineTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SERPERIOR_REGION}),
+        .formSpeciesIdTable = sServineFormSpeciesIdTable
+    },
+
+    [SPECIES_SERPERIOR_REGION] =
+    {
+        .baseHP        = 108,
+        .baseAttack    = 80,
+        .baseDefense   = 97,
+        .baseSpeed     = 53,
+        .baseSpAttack  = 130,
+        .baseSpDefense = 67,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_GROUND),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 264 : 238,
+        .evYield_Speed = 3,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_GRASS),
+        .abilities = { ABILITY_OVERGROW, ABILITY_CORROSION, ABILITY_CONDESCEND },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Serperior"),
+        .cryId = CRY_SERPERIOR,
+        .natDexNum = NATIONAL_DEX_SERPERIOR,
+        .categoryName = _("Regal"),
+        .height = 33,
+        .weight = 630,
+        .description = COMPOUND_STRING(
+            "They raise their heads to intimidate foes,\n"
+            "but only give it their all when fighting\n"
+            "powerful opponents who are not fazed\n"
+            "by the glare from its noble eyes."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 405,
+        .trainerOffset = 8,
+        .frontPic = gMonFrontPic_Serperior,
+        .frontPicSize = MON_COORDS_SIZE(64, 56),
+        .frontPicYOffset = 4,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_CIRCULAR_STRETCH_TWICE,
+        .backPic = gMonBackPic_Serperior,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 1,
+        .backAnimId = BACK_ANIM_V_STRETCH,
+        .palette = gMonPalette_Serperior,
+        .shinyPalette = gMonShinyPalette_Serperior,
+        .iconSprite = gMonIcon_Serperior,
+        .iconPalIndex = 1,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(2, 8, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Serperior)
+        OVERWORLD(
+            sPicTable_Serperior,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Serperior,
+            gShinyOverworldPalette_Serperior
+        )
+        .levelUpLearnset = sSerperiorLevelUpLearnset,
+        .teachableLearnset = sSerperiorTeachableLearnset,
+        .formSpeciesIdTable = sSerperiorFormSpeciesIdTable
+    },
 const struct EggData gEggDatas[EGG_ID_COUNT] =
 {
 #include "egg_data.h"

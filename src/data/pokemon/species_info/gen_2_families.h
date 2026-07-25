@@ -261,7 +261,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 24,
         .weight = 2010,
         .description = COMPOUND_STRING(
-            "This Pokémon can fire a tremendously\n"
+            "This POKéMON can fire a tremendously\n"
             "powerful Solar Beam from its four\n"
             "flowers. Another name for this is\n"
             "Mega Sol Cannon."),
@@ -319,7 +319,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .description = COMPOUND_STRING(
             "It flares flames from its back to protect\n"
             "itself. The fire burns vigorously if the\n"
-            "Pokémon is angry. When it is tired,\n"
+            "POKéMON is angry. When it is tired,\n"
             "it sputters with incomplete combustion."),
         .pokemonScale = 539,
         .pokemonOffset = 21,
@@ -579,9 +579,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_TOTODILE] =
     {
         .baseHP        = 50,
-        .baseAttack    = 65,
+        .baseAttack    = 75,
         .baseDefense   = 64,
-        .baseSpeed     = 43,
+        .baseSpeed     = 56,
         .baseSpAttack  = 44,
         .baseSpDefense = 48,
         .types = MON_TYPES(TYPE_WATER),
@@ -593,16 +593,16 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
-        .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_SHEER_FORCE },
+        .abilities = { ABILITY_TORRENT, ABILITY_SHEER_FORCE, ABILITY_STRONG_JAW },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Totodile"),
+        .speciesName = _("TOTODILE"),
         .cryId = CRY_TOTODILE,
         .natDexNum = NATIONAL_DEX_TOTODILE,
-        .categoryName = _("Big Jaw"),
+        .categoryName = _("BIG JAW"),
         .height = 6,
         .weight = 95,
         .description = COMPOUND_STRING(
-            "Despite its small body, Totodile's jaws\n"
+            "Despite its small body, TOTODILE's jaws\n"
             "are very powerful. While it may think it is\n"
             "just playfully nipping, its bite has enough\n"
             "strength to cause serious injury."),
@@ -651,12 +651,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_CROCONAW] =
     {
         .baseHP        = 65,
-        .baseAttack    = 80,
+        .baseAttack    = 95,
         .baseDefense   = 80,
-        .baseSpeed     = 58,
+        .baseSpeed     = 62,
         .baseSpAttack  = 59,
         .baseSpDefense = 63,
-        .types = MON_TYPES(TYPE_WATER),
+        .types = MON_TYPES(TYPE_WATER, TYPE_DARK),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 142 : 143,
         .evYield_Attack = 1,
@@ -666,13 +666,13 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
-        .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_SHEER_FORCE },
+        .abilities = { ABILITY_TORRENT, ABILITY_SHEER_FORCE, ABILITY_STRONG_JAW },
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = TRUE,
-        .speciesName = _("Croconaw"),
+        .speciesName = _("CROCONAW"),
         .cryId = CRY_CROCONAW,
         .natDexNum = NATIONAL_DEX_CROCONAW,
-        .categoryName = _("Big Jaw"),
+        .categoryName = _("BIG JAW"),
         .height = 11,
         .weight = 250,
         .description = COMPOUND_STRING(
@@ -719,13 +719,13 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_FERALIGATR] =
     {
-        .baseHP        = 85,
-        .baseAttack    = 105,
+        .baseHP        = 90,
+        .baseAttack    = 121,
         .baseDefense   = 100,
-        .baseSpeed     = 78,
-        .baseSpAttack  = 79,
-        .baseSpDefense = 83,
-        .types = MON_TYPES(TYPE_WATER),
+        .baseSpeed     = 72,
+        .baseSpAttack  = 74,
+        .baseSpDefense = 78,
+        .types = MON_TYPES(TYPE_WATER, TYPE_DARK),
         .catchRate = 45,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 265,
@@ -741,12 +741,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
-        .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_SHEER_FORCE },
+        .abilities = { ABILITY_TORRENT, ABILITY_SHEER_FORCE, ABILITY_STRONG_JAW },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Feraligatr"),
+        .speciesName = _("FERALIGATR"),
         .cryId = CRY_FERALIGATR,
         .natDexNum = NATIONAL_DEX_FERALIGATR,
-        .categoryName = _("Big Jaw"),
+        .categoryName = _("BIG JAW"),
         .height = 23,
         .weight = 888,
         .description = COMPOUND_STRING(
@@ -798,7 +798,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_GEN_9_MEGA_EVOLUTIONS
     [SPECIES_FERALIGATR_MEGA] =
     {
-        .baseHP        = 85,
+        .baseHP        = 90,
         .baseAttack    = 160,
         .baseDefense   = 125,
         .baseSpeed     = 78,
@@ -814,7 +814,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
-        .abilities = { ABILITY_DRAGONIZE, ABILITY_NONE, ABILITY_DRAGONIZE },
+        .abilities = { ABILITY_DISGUISE, ABILITY_NONE, ABILITY_DISGUISE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Feraligatr"),
     #if P_MODIFIED_MEGA_CRIES
@@ -823,14 +823,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .cryId = CRY_FERALIGATR,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_FERALIGATR,
-        .categoryName = _("Double Jaw"),
+        .categoryName = _("DOUBLE JAW"),
         .height = 23,
         .weight = 1088,
         .description = COMPOUND_STRING(
             "With its arms and hoodlike fin, this\n"
-            "Pokémon forms a gigantic set of jaws\n"
+            "POKéMON forms a gigantic set of jaws\n"
             "with a bite 10 times as powerful\n"
-            "as Mega Feraligatr's actual jaws."),
+            "as MEGA FERALIGATR's actual jaws."),
         .frontPic = gMonFrontPic_FeraligatrMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
@@ -1566,7 +1566,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .description = COMPOUND_STRING(
             "The light-emitting orbs on its back are\n"
             "very bright. They are formed from a part of\n"
-            "its dorsal fin. This Pokémon illuminates\n"
+            "its dorsal fin. This POKéMON illuminates\n"
             "the inky darkness of deep seas."),
         .pokemonScale = 269,
         .pokemonOffset = 6,
@@ -1640,7 +1640,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .description = COMPOUND_STRING(
             "As its energy, it uses the feelings of\n"
             "compassion and pleasure exuded by\n"
-            "people and Pokémon. It stores up happy\n"
+            "people and POKéMON. It stores up happy\n"
             "feelings in its shell, then shares them out."),
         .pokemonScale = 507,
         .pokemonOffset = 23,
@@ -1708,7 +1708,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 6,
         .weight = 32,
         .description = COMPOUND_STRING(
-            "It is said to be a Pokémon that brings good\n"
+            "It is said to be a POKéMON that brings good\n"
             "fortune. When it spots someone who is pure\n"
             "of heart, a Togetic appears and shares its\n"
             "happiness with that person."),
@@ -2717,7 +2717,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 4,
         .weight = 5,
         .description = COMPOUND_STRING(
-            "This Pokémon drifts and floats with the\n"
+            "This POKéMON drifts and floats with the\n"
             "wind. If it senses the approach of strong\n"
             "winds, a Hoppip links leaves with others\n"
             "to prepare against being blown away."),
@@ -2880,7 +2880,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .description = COMPOUND_STRING(
             "Jumpluff ride warm southern winds to\n"
             "cross the sea and fly to foreign lands.\n"
-            "This Pokémon lands when it encounters\n"
+            "This POKéMON lands when it encounters\n"
             "cold air while it is floating."),
         .pokemonScale = 418,
         .pokemonOffset = -4,
@@ -3361,7 +3361,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 19,
         .weight = 515,
         .description = COMPOUND_STRING(
-            "This six-legged Pokémon is easily capable\n"
+            "This six-legged POKéMON is easily capable\n"
             "of transporting an adult in flight. It is\n"
             "adept at biting apart foes while flying\n"
             "by at high speed."),
@@ -3620,7 +3620,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .description = COMPOUND_STRING(
             "After losing a territorial struggle,\n"
             "Wooper began living on land.\n"
-            "The Pokémon changed over time, developing\n"
+            "The POKéMON changed over time, developing\n"
             "a poisonous film to protect its body."),
         .pokemonScale = 479,
         .pokemonOffset = 21,
@@ -3685,7 +3685,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 18,
         .weight = 2230,
         .description = COMPOUND_STRING(
-            "When attacked, this Pokémon will\n"
+            "When attacked, this POKéMON will\n"
             "retaliate by sticking thick spines out\n"
             "from its body. It's a risky move\n"
             "that puts everything on the line."),
@@ -4417,7 +4417,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .description = COMPOUND_STRING(
             "Now that the brain waves from the\n"
             "head and tail are synced up, the\n"
-            "psychic power of this Pokémon is 10\n"
+            "psychic power of this POKéMON is 10\n"
             "times stronger than Girafarig's."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
@@ -4632,7 +4632,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .weight = 140,
         .description = COMPOUND_STRING(
             "Its drill-tipped tail is used to burrow into\n"
-            "the ground backwards. This Pokémon is\n"
+            "the ground backwards. This POKéMON is\n"
             "known to make its nest in complex shapes\n"
             "deep under the ground."),
         .pokemonScale = 316,
@@ -4706,7 +4706,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 36,
         .weight = 392,
         .description = COMPOUND_STRING(
-            "This Pokémon uses its hard tail to\n"
+            "This POKéMON uses its hard tail to\n"
             "make its nest by boring holes into\n"
             "bedrock deep underground. The nest\n"
             "can reach lengths of over six miles."),
@@ -4773,7 +4773,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             "A recent study uncovered that the\n"
             "number of segments a Dudunsparce's\n"
             "body has is determined by the\n"
-            "Pokémon's genes."),
+            "POKéMON's genes."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -5000,7 +5000,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .weight = 78,
         .description = COMPOUND_STRING(
             "By baring its fangs and making a scary\n"
-            "face, it sends smaller Pokémon scurrying\n"
+            "face, it sends smaller POKéMON scurrying\n"
             "in terror. The Snubbull does seem a\n"
             "little sad at making its foes flee."),
         .pokemonScale = 465,
@@ -5228,7 +5228,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .weight = 39,
         .description = COMPOUND_STRING(
             "A form of Qwilfish from the distant past.\n"
-            "Fishers detest this troublesome Pokémon\n"
+            "Fishers detest this troublesome POKéMON\n"
             "because it sprays poison from its spines,\n"
             "getting it everywhere."),
         .pokemonScale = 430,
@@ -5530,7 +5530,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .weight = 625,
         .description = COMPOUND_STRING(
             "A tremendous influx of energy builds it up,\n"
-            "but when Mega Evolution ends, Heracross\n"
+            "but when MEGA EVOLUTION ends, Heracross\n"
             "is bothered by terrible soreness in its\n"
             "muscles."),
         .pokemonScale = 256,
@@ -6220,7 +6220,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 7,
         .weight = 350,
         .description = COMPOUND_STRING(
-            "It is a species of Pokémon that lives in\n"
+            "It is a species of POKéMON that lives in\n"
             "volcanic areas. If its body cools, its skin\n"
             "hardens and immobilizes it. To avoid that,\n"
             "it sleeps near magma."),
@@ -6541,7 +6541,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .description = COMPOUND_STRING(
             "A frozen Mamoswine was dug from ice\n"
             "dating back 10,000 years. It woke up to\n"
-            "much amazement. This Pokémon has been\n"
+            "much amazement. This POKéMON has been\n"
             "around for a long, long, long time."),
         .pokemonScale = 257,
         .pokemonOffset = 6,
@@ -6771,7 +6771,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             "Its shell is overflowing with its\n"
             "heightened otherworldly energy. The\n"
             "ectoplasm serves as protection for this\n"
-            "Pokémon's core spirit."),
+            "POKéMON's core spirit."),
         .pokemonScale = 305,
         .pokemonOffset = 7,
         .trainerScale = 257,
@@ -7219,7 +7219,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 17,
         .weight = 505,
         .description = COMPOUND_STRING(
-            "A Pokémon that has a body and wings of\n"
+            "A POKéMON that has a body and wings of\n"
             "steel. People in the past used feathers\n"
             "fallen from Skarmory to make swords and\n"
             "knives."),
@@ -7294,7 +7294,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 17,
         .weight = 404,
         .description = COMPOUND_STRING(
-            "Due to the effects of Mega Evolution,\n"
+            "Due to the effects of MEGA EVOLUTION,\n"
             "its pincers have taken a more\n"
             "diabolical form, ripping anything\n"
             "they pierce to shreds."),
@@ -7353,7 +7353,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .description = COMPOUND_STRING(
             "Houndour communicate with each other\n"
             "using a variety of cries to corner their\n"
-            "prey. This Pokémon's remarkable teamwork\n"
+            "prey. This POKéMON's remarkable teamwork\n"
             "is simply unparalleled."),
         .pokemonScale = 393,
         .pokemonOffset = 16,
@@ -7737,7 +7737,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .description = COMPOUND_STRING(
             "Stantler's magnificent antlers were\n"
             "once traded at high prices as works of art.\n"
-            "As a result, this Pokémon was hunted\n"
+            "As a result, this POKéMON was hunted\n"
             "close to extinction."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
@@ -7881,7 +7881,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             "A Smeargle marks its territory using a\n"
             "fluid that leaks out from the tip of its\n"
             "tail. About 5,000 different marks left by\n"
-            "this Pokémon have been found."),
+            "this POKéMON have been found."),
         .pokemonScale = 287,
         .pokemonOffset = 5,
         .trainerScale = 256,
@@ -8487,7 +8487,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .weight = 2550,
         .description = COMPOUND_STRING(
             "Due to the colossal power poured into it,\n"
-            "this Pokémon's back split right open. Its\n"
+            "this POKéMON's back split right open. Its\n"
             "destructive instincts are the only thing\n"
             "keeping it moving."),
         .pokemonScale = 256,
@@ -8734,7 +8734,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 6,
         .weight = 50,
         .description = COMPOUND_STRING(
-            "This Pokémon came from the future by\n"
+            "This POKéMON came from the future by\n"
             "crossing over time. It is thought that so\n"
             "long as Celebi appears, a bright and\n"
             "shining future awaits us."),
