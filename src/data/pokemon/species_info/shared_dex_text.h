@@ -48,7 +48,7 @@ const u8 gMothimPokedexText[] = _(
     "It does not keep a nest. While it\n"
     "loves floral honey, it won't gather\n"
     "any itself. Instead, it plots to steal\n"
-    "honey collected by Combee.");
+    "honey collected by COMBEE.");
 
 const u8 gArceusPokedexText[] = _(
     "It is told in mythology that this POKéMON\n"

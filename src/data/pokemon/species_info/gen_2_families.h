@@ -12,7 +12,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 45,
         .baseSpAttack  = 49,
         .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_GRASS),
+        .types = MON_TYPES(TYPE_GRASS, TYPE_FAIRY),
         .catchRate = 45,
         .expYield = 64,
         .evYield_SpDefense = 1,
@@ -21,12 +21,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
-        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_LEAF_GUARD },
+        .abilities = { ABILITY_OVERGROW, ABILITY_LEAF_GUARD, ABILITY_TRIAGE },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Chikorita"),
+        .speciesName = _("CHIKORITA"),
         .cryId = CRY_CHIKORITA,
         .natDexNum = NATIONAL_DEX_CHIKORITA,
-        .categoryName = _("Leaf"),
+        .categoryName = _("LEAF"),
         .height = 9,
         .weight = 64,
         .description = COMPOUND_STRING(
@@ -81,7 +81,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 60,
         .baseSpAttack  = 63,
         .baseSpDefense = 80,
-        .types = MON_TYPES(TYPE_GRASS),
+        .types = MON_TYPES(TYPE_GRASS, TYPE_FAIRY),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 142 : 141,
         .evYield_Defense = 1,
@@ -91,16 +91,16 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
-        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_LEAF_GUARD },
+        .abilities = { ABILITY_OVERGROW, ABILITY_LEAF_GUARD, ABILITY_TRIAGE },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Bayleef"),
+        .speciesName = _("BAYLEEF"),
         .cryId = CRY_BAYLEEF,
         .natDexNum = NATIONAL_DEX_BAYLEEF,
-        .categoryName = _("Leaf"),
+        .categoryName = _("LEAF"),
         .height = 12,
         .weight = 158,
         .description = COMPOUND_STRING(
-            "A Bayleef's neck is ringed by curled-up\n"
+            "A BAYLEEF's neck is ringed by curled-up\n"
             "leaves. Inside each leaf is a small tree\n"
             "shoot. The fragrance of this shoot\n"
             "makes people peppy."),
@@ -149,7 +149,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 80,
         .baseSpAttack  = 83,
         .baseSpDefense = 100,
-        .types = MON_TYPES(TYPE_GRASS),
+        .types = MON_TYPES(TYPE_GRASS, TYPE_FAIRY),
         .catchRate = 45,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 263,
@@ -165,16 +165,16 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
-        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_LEAF_GUARD },
+        .abilities = { ABILITY_OVERGROW, ABILITY_LEAF_GUARD, ABILITY_TRIAGE },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Meganium"),
+        .speciesName = _("MEGANIUM"),
         .cryId = CRY_MEGANIUM,
         .natDexNum = NATIONAL_DEX_MEGANIUM,
-        .categoryName = _("Herb"),
+        .categoryName = _("HERB"),
         .height = 18,
         .weight = 1005,
         .description = COMPOUND_STRING(
-            "The fragrance of a Meganium's flower\n"
+            "The fragrance of a MEGANIUM's flower\n"
             "soothes and calms emotions. In battle,\n"
             "it gives off more of its becalming scent\n"
             "to blunt the foe's fighting spirit."),
@@ -250,19 +250,19 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
         .abilities = { ABILITY_MEGA_SOL, ABILITY_MEGA_SOL, ABILITY_MEGA_SOL },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Meganium"),
+        .speciesName = _("MEGANIUM"),
     #if P_MODIFIED_MEGA_CRIES
         .cryId = CRY_MEGANIUM_MEGA,
     #else
         .cryId = CRY_MEGANIUM,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_MEGANIUM,
-        .categoryName = _("Herb"),
+        .categoryName = _("HERB"),
         .height = 24,
         .weight = 2010,
         .description = COMPOUND_STRING(
             "This POKéMON can fire a tremendously\n"
-            "powerful Solar Beam from its four\n"
+            "powerful SOLAR BEAM from its four\n"
             "flowers. Another name for this is\n"
             "Mega Sol Cannon."),
         .frontPic = gMonFrontPic_MeganiumMega,
@@ -814,9 +814,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
-        .abilities = { ABILITY_DISGUISE, ABILITY_NONE, ABILITY_DISGUISE },
+        .abilities = { ABILITY_DISGUISE, ABILITY_DISGUISE, ABILITY_DISGUISE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Feraligatr"),
+        .speciesName = _("FERALIGATR"),
     #if P_MODIFIED_MEGA_CRIES
         .cryId = CRY_FERALIGATR_MEGA,
     #else
@@ -1151,12 +1151,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_LEDYBA] =
     {
         .baseHP        = 40,
-        .baseAttack    = 20,
+        .baseAttack    = 75,
         .baseDefense   = 30,
         .baseSpeed     = 55,
         .baseSpAttack  = 40,
         .baseSpDefense = 80,
-        .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
+        .types = MON_TYPES(TYPE_BUG, TYPE_FIGHTING),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 53 : 54,
         .evYield_SpDefense = 1,
@@ -1165,16 +1165,16 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_SWARM, ABILITY_EARLY_BIRD, ABILITY_RATTLED },
+        .abilities = { ABILITY_IRON_FIST, ABILITY_LEVITATE, ABILITY_SHELL_ARMOR },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Ledyba"),
+        .speciesName = _("LEDYBA"),
         .cryId = CRY_LEDYBA,
         .natDexNum = NATIONAL_DEX_LEDYBA,
-        .categoryName = _("Five Star"),
+        .categoryName = _("FIVE STAR"),
         .height = 10,
         .weight = 108,
         .description = COMPOUND_STRING(
-            "Ledyba communicate using a fluid that\n"
+            "LEDYBA communicate using a fluid that\n"
             "they secrete from where the legs join the\n"
             "body. They are said to convey feelings to\n"
             "others by altering the fluid's scent."),
@@ -1234,12 +1234,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_LEDIAN] =
     {
         .baseHP        = 55,
-        .baseAttack    = 35,
+        .baseAttack    = 105,
         .baseDefense   = 50,
         .baseSpeed     = 85,
         .baseSpAttack  = 55,
         .baseSpDefense = 110,
-        .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
+        .types = MON_TYPES(TYPE_BUG, TYPE_FIGHTING),
         .catchRate = 90,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 137 : 134,
         .evYield_SpDefense = 2,
@@ -1248,18 +1248,18 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_SWARM, ABILITY_EARLY_BIRD, ABILITY_IRON_FIST },
+        .abilities = { ABILITY_IRON_FIST, ABILITY_LEVITATE, ABILITY_SHELL_ARMOR },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Ledian"),
+        .speciesName = _("LEDIAN"),
         .cryId = CRY_LEDIAN,
         .natDexNum = NATIONAL_DEX_LEDIAN,
-        .categoryName = _("Five Star"),
+        .categoryName = _("FIVE STAR"),
         .height = 14,
         .weight = 356,
         .description = COMPOUND_STRING(
             "It is said that in lands with clean air,\n"
             "where the stars fill the sky, there live\n"
-            "many Ledian. For good reason, they use\n"
+            "many LEDIAN. For good reason, they use\n"
             "the light of the stars as energy."),
         .pokemonScale = 256,
         .pokemonOffset = 2,
@@ -1317,12 +1317,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_SPINARAK
     [SPECIES_SPINARAK] =
     {
-        .baseHP        = 40,
+        .baseHP        = 70,
         .baseAttack    = 60,
-        .baseDefense   = 40,
-        .baseSpeed     = 30,
+        .baseDefense   = 50,
+        .baseSpeed     = 40,
         .baseSpAttack  = 40,
-        .baseSpDefense = 40,
+        .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_BUG, TYPE_POISON),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 50 : 54,
@@ -1332,18 +1332,18 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_SWARM, ABILITY_INSOMNIA, ABILITY_SNIPER },
+        .abilities = { ABILITY_ARENA_TRAP, ABILITY_INSOMNIA, ABILITY_SNIPER },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Spinarak"),
+        .speciesName = _("SPINARAK"),
         .cryId = CRY_SPINARAK,
         .natDexNum = NATIONAL_DEX_SPINARAK,
-        .categoryName = _("String Spit"),
+        .categoryName = _("STRING SPIT"),
         .height = 5,
         .weight = 85,
         .description = COMPOUND_STRING(
             "The web it spins can be considered its\n"
             "second nervous system. It is said that a\n"
-            "Spinarak determines its prey by the tiny\n"
+            "SPINARAK determines its prey by the tiny\n"
             "vibrations it feels through the web."),
         .pokemonScale = 414,
         .pokemonOffset = 21,
@@ -1391,12 +1391,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_ARIADOS] =
     {
-        .baseHP        = 70,
+        .baseHP        = 100,
         .baseAttack    = 90,
-        .baseDefense   = 70,
-        .baseSpeed     = 40,
+        .baseDefense   = 80,
+        .baseSpeed     = 50,
         .baseSpAttack  = 60,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_7 ? 70 : 60,
+        .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_BUG, TYPE_POISON),
         .catchRate = 90,
     #if P_UPDATED_EXP_YIELDS >= GEN_7
@@ -1412,12 +1412,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_SWARM, ABILITY_INSOMNIA, ABILITY_SNIPER },
+        .abilities = { ABILITY_ARENA_TRAP, ABILITY_INSOMNIA, ABILITY_SNIPER },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Ariados"),
+        .speciesName = _("ARIADOS"),
         .cryId = CRY_ARIADOS,
         .natDexNum = NATIONAL_DEX_ARIADOS,
-        .categoryName = _("Long Leg"),
+        .categoryName = _("LONG LEG"),
         .height = 11,
         .weight = 335,
         .description = COMPOUND_STRING(
@@ -1483,12 +1483,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
-        .abilities = { ABILITY_VOLT_ABSORB, ABILITY_ILLUMINATE, ABILITY_WATER_ABSORB },
+        .abilities = { ABILITY_VOLT_ABSORB, ABILITY_ILLUMINATE, ABILITY_SWIFT_SWIM },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Chinchou"),
+        .speciesName = _("CHINCHOU"),
         .cryId = CRY_CHINCHOU,
         .natDexNum = NATIONAL_DEX_CHINCHOU,
-        .categoryName = _("Angler"),
+        .categoryName = _("ANGLER"),
         .height = 5,
         .weight = 120,
         .description = COMPOUND_STRING(
@@ -1555,12 +1555,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
-        .abilities = { ABILITY_VOLT_ABSORB, ABILITY_ILLUMINATE, ABILITY_WATER_ABSORB },
+        .abilities = { ABILITY_VOLT_ABSORB, ABILITY_ILLUMINATE, ABILITY_SWIFT_SWIM },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Lanturn"),
+        .speciesName = _("LANTURN"),
         .cryId = CRY_LANTURN,
         .natDexNum = NATIONAL_DEX_LANTURN,
-        .categoryName = _("Light"),
+        .categoryName = _("LIGHT"),
         .height = 12,
         .weight = 225,
         .description = COMPOUND_STRING(
@@ -3742,20 +3742,16 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = 35,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-    #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_INSOMNIA, ABILITY_SUPER_LUCK, ABILITY_PRANKSTER },
-    #else
-        .abilities = { ABILITY_INSOMNIA, ABILITY_NONE, ABILITY_PRANKSTER },
-    #endif
+        .abilities = { ABILITY_DEFIANT, ABILITY_INSOMNIA, ABILITY_PRANKSTER },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Murkrow"),
+        .speciesName = _("MURKROW"),
         .cryId = CRY_MURKROW,
         .natDexNum = NATIONAL_DEX_MURKROW,
-        .categoryName = _("Darkness"),
+        .categoryName = _("DARKNESS"),
         .height = 5,
         .weight = 21,
         .description = COMPOUND_STRING(
-            "Murkrow were feared as the alleged\n"
+            "MURKROW were feared as the alleged\n"
             "bearers of ill fortune. It shows strong\n"
             "interest in anything that sparkles. It will\n"
             "even try to steal rings from women."),
@@ -3832,17 +3828,17 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = 35,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_INSOMNIA, ABILITY_SUPER_LUCK, ABILITY_MOXIE },
+        .abilities = { ABILITY_DEFIANT, ABILITY_INSOMNIA, ABILITY_BIG_PECKS },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Honchkrow"),
+        .speciesName = _("HONCHKROW"),
         .cryId = CRY_HONCHKROW,
         .natDexNum = NATIONAL_DEX_HONCHKROW,
-        .categoryName = _("Big Boss"),
+        .categoryName = _("BIG BOSS"),
         .height = 9,
         .weight = 273,
         .description = COMPOUND_STRING(
             "Becoming active at night, it is known\n"
-            "to swarm with numerous Murkrow in tow.\n"
+            "to swarm with numerous MURKROW in tow.\n"
             "It is said that it never forgives the\n"
             "mistakes of its cronies."),
         .pokemonScale = 338,
@@ -3888,13 +3884,13 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_MISDREAVUS
     [SPECIES_MISDREAVUS] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 60,
-        .baseDefense   = 60,
-        .baseSpeed     = 85,
-        .baseSpAttack  = 85,
-        .baseSpDefense = 85,
-        .types = MON_TYPES(TYPE_GHOST),
+        .baseHP        = 55,
+        .baseAttack    = 55,
+        .baseDefense   = 55,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_GHOST, TYPE_FAIRY),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 87 : 147,
         .evYield_SpAttack = (P_UPDATED_EVS >= GEN_4) ? 0 : 1,
@@ -3904,16 +3900,16 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = 35,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
-        .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
+        .abilities = { ABILITY_INFILTRATOR, ABILITY_LEVITATE, ABILITY_PRANKSTER },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Misdreavus"),
+        .speciesName = _("MISDREAVUS"),
         .cryId = CRY_MISDREAVUS,
         .natDexNum = NATIONAL_DEX_MISDREAVUS,
-        .categoryName = _("Screech"),
+        .categoryName = _("SCREECH"),
         .height = 7,
         .weight = 10,
         .description = COMPOUND_STRING(
-            "A Misdreavus frightens people with a\n"
+            "A MISDREAVUS frightens people with a\n"
             "creepy, sobbing cry. It apparently uses\n"
             "its red spheres to absorb the fear of foes\n"
             "as its nutrition."),
@@ -3962,7 +3958,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sMisdreavusTeachableLearnset,
         .eggMoveLearnset = sMisdreavusEggMoveLearnset,
     #if P_GEN_4_CROSS_EVOS
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DUSK_STONE, SPECIES_MISMAGIUS}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DUSK_STONE, SPECIES_MISMAGIUS}, {EVO_ITEM, ITEM_SUN_STONE, SPECIES_FLUTTER_MANE}),
     #endif
     },
 
@@ -3972,10 +3968,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseHP        = 60,
         .baseAttack    = 60,
         .baseDefense   = 60,
-        .baseSpeed     = 105,
-        .baseSpAttack  = 105,
-        .baseSpDefense = 105,
-        .types = MON_TYPES(TYPE_GHOST),
+        .baseSpeed     = 85,
+        .baseSpAttack  = 135,
+        .baseSpDefense = 115,
+        .types = MON_TYPES(TYPE_GHOST, TYPE_PSYCHIC),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 173 : 187,
         .evYield_SpAttack = 1,
@@ -3985,12 +3981,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = 35,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
-        .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
+        .abilities = { ABILITY_INFILTRATOR, ABILITY_LEVITATE, ABILITY_SPELLCASTER },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Mismagius"),
+        .speciesName = _("MISMAGIUS"),
         .cryId = CRY_MISMAGIUS,
         .natDexNum = NATIONAL_DEX_MISMAGIUS,
-        .categoryName = _("Magical"),
+        .categoryName = _("MAGICAL"),
         .height = 9,
         .weight = 44,
         .description = COMPOUND_STRING(
@@ -4306,11 +4302,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_GIRAFARIG
     [SPECIES_GIRAFARIG] =
     {
-        .baseHP        = 70,
+        .baseHP        = 90,
         .baseAttack    = 80,
         .baseDefense   = 65,
-        .baseSpeed     = 85,
-        .baseSpAttack  = 90,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 80,
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_PSYCHIC),
         .catchRate = 60,
@@ -4321,16 +4317,16 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_INNER_FOCUS, ABILITY_EARLY_BIRD, ABILITY_SAP_SIPPER },
+        .abilities = { ABILITY_STRONG_JAW, ABILITY_CUD_CHEW, ABILITY_SAP_SIPPER },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Girafarig"),
+        .speciesName = _("GIRAFARIG"),
         .cryId = CRY_GIRAFARIG,
         .natDexNum = NATIONAL_DEX_GIRAFARIG,
-        .categoryName = _("Long Neck"),
+        .categoryName = _("LONG NECK"),
         .height = 15,
         .weight = 415,
         .description = COMPOUND_STRING(
-            "A Girafarig is an herbivore--it eats\n"
+            "A GIRAFARIG is an herbivore--it eats\n"
             "grass and tree shoots. While it is eating,\n"
             "its tail makes chewing and swallowing\n"
             "motions as if it were also eating."),
@@ -4406,19 +4402,19 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_CUD_CHEW, ABILITY_ARMOR_TAIL, ABILITY_SAP_SIPPER },
+        .abilities = { ABILITY_ARMOR_TAIL, ABILITY_CUD_CHEW, ABILITY_SAP_SIPPER },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Farigiraf"),
+        .speciesName = _("FARIGIRAF"),
         .cryId = CRY_FARIGIRAF,
         .natDexNum = NATIONAL_DEX_FARIGIRAF,
-        .categoryName = _("Long Neck"),
+        .categoryName = _("LONG NECK"),
         .height = 32,
         .weight = 1600,
         .description = COMPOUND_STRING(
             "Now that the brain waves from the\n"
             "head and tail are synced up, the\n"
             "psychic power of this POKéMON is 10\n"
-            "times stronger than Girafarig's."),
+            "times stronger than GIRAFARIG's."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -4463,7 +4459,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 15,
         .baseSpAttack  = 35,
         .baseSpDefense = 35,
-        .types = MON_TYPES(TYPE_BUG),
+        .types = MON_TYPES(TYPE_BUG, TYPE_ROCK),
         .catchRate = 190,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 58 : 60,
         .evYield_Defense = 1,
@@ -4472,16 +4468,16 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_STURDY, ABILITY_NONE, ABILITY_OVERCOAT },
+        .abilities = { ABILITY_STURDY, ABILITY_OVERCOAT, ABILITY_DETONATE },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Pineco"),
+        .speciesName = _("PINECO"),
         .cryId = CRY_PINECO,
         .natDexNum = NATIONAL_DEX_PINECO,
-        .categoryName = _("Bagworm"),
+        .categoryName = _("BAGWORM"),
         .height = 6,
         .weight = 72,
         .description = COMPOUND_STRING(
-            "A Pineco hangs from a tree branch and\n"
+            "A PINECO hangs from a tree branch and\n"
             "waits for prey. While eating, if it is\n"
             "disturbed by someone shaking its tree, it\n"
             "falls on the ground and suddenly explodes."),
@@ -4546,12 +4542,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_STURDY, ABILITY_NONE, ABILITY_OVERCOAT },
+        .abilities = { ABILITY_STURDY, ABILITY_OVERCOAT, ABILITY_DETONATE },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Forretress"),
+        .speciesName = _("FORRETRESS"),
         .cryId = CRY_FORRETRESS,
         .natDexNum = NATIONAL_DEX_FORRETRESS,
-        .categoryName = _("Bagworm"),
+        .categoryName = _("BAGWORM"),
         .height = 12,
         .weight = 1258,
         .description = COMPOUND_STRING(
@@ -4624,10 +4620,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_SERENE_GRACE, ABILITY_RUN_AWAY, ABILITY_RATTLED },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Dunsparce"),
+        .speciesName = _("DUNSPARCE"),
         .cryId = CRY_DUNSPARCE,
         .natDexNum = NATIONAL_DEX_DUNSPARCE,
-        .categoryName = _("Land Snake"),
+        .categoryName = _("LAND SNAKE"),
         .height = 15,
         .weight = 140,
         .description = COMPOUND_STRING(
@@ -4674,8 +4670,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sDunsparceTeachableLearnset,
         .eggMoveLearnset = sDunsparceEggMoveLearnset,
     #if P_GEN_9_CROSS_EVOS
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_DUDUNSPARCE_TWO_SEGMENT, CONDITIONS({IF_KNOWS_MOVE, MOVE_HYPER_DRILL}, {IF_PID_MODULO_100_GT, 0})},
-                                {EVO_LEVEL, 0, SPECIES_DUDUNSPARCE_THREE_SEGMENT, CONDITIONS({IF_KNOWS_MOVE, MOVE_HYPER_DRILL}, {IF_PID_MODULO_100_EQ, 0})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_DUDUNSPARCE_TWO_SEGMENT, CONDITIONS({IF_PID_UPPER_MODULO_10_GT, 4})},
+                                {EVO_LEVEL, 30, SPECIES_DUDUNSPARCE_THREE_SEGMENT, CONDITIONS({IF_PID_UPPER_MODULO_10_LT, 5})}),
     #endif
     },
 
@@ -4699,10 +4695,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_SERENE_GRACE, ABILITY_RUN_AWAY, ABILITY_RATTLED },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Dudunsparce"),
+        .speciesName = _("DUDUNSPARCE"),
         .cryId = CRY_DUDUNSPARCE,
         .natDexNum = NATIONAL_DEX_DUDUNSPARCE,
-        .categoryName = _("Land Snake"),
+        .categoryName = _("LAND SNAKE"),
         .height = 36,
         .weight = 392,
         .description = COMPOUND_STRING(
@@ -4763,15 +4759,15 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_SERENE_GRACE, ABILITY_RUN_AWAY, ABILITY_RATTLED },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Dudunsparce"),
+        .speciesName = _("DUDUNSPARCE"),
         .cryId = CRY_DUDUNSPARCE,
         .natDexNum = NATIONAL_DEX_DUDUNSPARCE,
-        .categoryName = _("Land Snake"),
+        .categoryName = _("LAND SNAKE"),
         .height = 45,
         .weight = 474,
         .description = COMPOUND_STRING(
             "A recent study uncovered that the\n"
-            "number of segments a Dudunsparce's\n"
+            "number of segments a DUDUNSPARCE's\n"
             "body has is determined by the\n"
             "POKéMON's genes."),
         .pokemonScale = 356,
@@ -4828,12 +4824,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_HYPER_CUTTER, ABILITY_SAND_VEIL, ABILITY_IMMUNITY },
+        .abilities = { ABILITY_POISON_HEAL, ABILITY_HYPER_CUTTER, ABILITY_VAMPIRIC },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Gligar"),
+        .speciesName = _("GLIGAR"),
         .cryId = CRY_GLIGAR,
         .natDexNum = NATIONAL_DEX_GLIGAR,
-        .categoryName = _("Fly Scorpion"),
+        .categoryName = _("FLY SCORPION"),
         .height = 11,
         .weight = 648,
         .description = COMPOUND_STRING(
@@ -4900,7 +4896,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_GLISCOR] =
     {
         .baseHP        = 75,
-        .baseAttack    = 95,
+        .baseAttack    = 105,
         .baseDefense   = 125,
         .baseSpeed     = 95,
         .baseSpAttack  = 45,
@@ -4914,16 +4910,16 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_HYPER_CUTTER, ABILITY_SAND_VEIL, ABILITY_POISON_HEAL },
+        .abilities = { ABILITY_POISON_HEAL, ABILITY_HYPER_CUTTER, ABILITY_VAMPIRIC },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Gliscor"),
+        .speciesName = _("GLISCOR"),
         .cryId = CRY_GLISCOR,
         .natDexNum = NATIONAL_DEX_GLISCOR,
-        .categoryName = _("Fang Scorp"),
+        .categoryName = _("FANG SCORP"),
         .height = 20,
         .weight = 425,
         .description = COMPOUND_STRING(
-            "Gliscor observes prey while hanging\n"
+            "GLISCOR observes prey while hanging\n"
             "upside down from branches. Its flight is\n"
             "soundless. When the chance presents\n"
             "itself, it swoops!"),
@@ -4977,11 +4973,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 30,
         .baseSpAttack  = 40,
         .baseSpDefense = 40,
-    #if P_UPDATED_TYPES >= GEN_6
-        .types = MON_TYPES(TYPE_FAIRY),
-    #else
-        .types = MON_TYPES(TYPE_NORMAL),
-    #endif
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_FIGHTING),
         .catchRate = 190,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 60 : 63,
         .evYield_Attack = 1,
@@ -4992,16 +4984,16 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
         .abilities = { ABILITY_INTIMIDATE, ABILITY_RUN_AWAY, ABILITY_RATTLED },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Snubbull"),
+        .speciesName = _("SNUBBULL"),
         .cryId = CRY_SNUBBULL,
         .natDexNum = NATIONAL_DEX_SNUBBULL,
-        .categoryName = _("Fairy"),
+        .categoryName = _("FAIRY"),
         .height = 6,
         .weight = 78,
         .description = COMPOUND_STRING(
             "By baring its fangs and making a scary\n"
             "face, it sends smaller POKéMON scurrying\n"
-            "in terror. The Snubbull does seem a\n"
+            "in terror. The SNUBBULL does seem a\n"
             "little sad at making its foes flee."),
         .pokemonScale = 465,
         .pokemonOffset = 19,
@@ -5049,11 +5041,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 45,
         .baseSpAttack  = 60,
         .baseSpDefense = 60,
-    #if P_UPDATED_TYPES >= GEN_6
-        .types = MON_TYPES(TYPE_FAIRY),
-    #else
-        .types = MON_TYPES(TYPE_NORMAL),
-    #endif
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_FIGHTING),
         .catchRate = 75,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 158 : 178,
         .evYield_Attack = 2,
@@ -5062,16 +5050,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
-    #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_INTIMIDATE, ABILITY_QUICK_FEET, ABILITY_RATTLED },
-    #else
-        .abilities = { ABILITY_INTIMIDATE, ABILITY_NONE, ABILITY_RATTLED },
-    #endif
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_STRONG_JAW, ABILITY_RATTLED },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Granbull"),
+        .speciesName = _("GRANBULL"),
         .cryId = CRY_GRANBULL,
         .natDexNum = NATIONAL_DEX_GRANBULL,
-        .categoryName = _("Fairy"),
+        .categoryName = _("FAIRY"),
         .height = 14,
         .weight = 487,
         .description = COMPOUND_STRING(
@@ -5432,10 +5416,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_SWARM, ABILITY_GUTS, ABILITY_MOXIE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Heracross"),
+        .speciesName = _("HERACROSS"),
         .cryId = CRY_HERACROSS,
         .natDexNum = NATIONAL_DEX_HERACROSS,
-        .categoryName = _("Single Horn"),
+        .categoryName = _("SINGLE HORN"),
         .height = 15,
         .weight = 540,
         .description = COMPOUND_STRING(
@@ -5518,14 +5502,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_SKILL_LINK, ABILITY_SKILL_LINK, ABILITY_SKILL_LINK },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Heracross"),
+        .speciesName = _("HERACROSS"),
     #if P_MODIFIED_MEGA_CRIES
         .cryId = CRY_HERACROSS_MEGA,
     #else
         .cryId = CRY_HERACROSS,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_HERACROSS,
-        .categoryName = _("Single Horn"),
+        .categoryName = _("SINGLE HORN"),
         .height = 17,
         .weight = 625,
         .description = COMPOUND_STRING(
@@ -5578,7 +5562,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_SNEASEL] =
     {
         .baseHP        = 55,
-        .baseAttack    = 95,
+        .baseAttack    = 100,
         .baseDefense   = 55,
         .baseSpeed     = 115,
         .baseSpAttack  = 35,
@@ -5593,17 +5577,17 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = 35,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_INNER_FOCUS, ABILITY_KEEN_EYE, ABILITY_PICKPOCKET },
+        .abilities = { ABILITY_PRESSURE, ABILITY_INNER_FOCUS, ABILITY_SHRED },
         .bodyColor = BODY_COLOR_BLACK,
         .noFlip = TRUE,
-        .speciesName = _("Sneasel"),
+        .speciesName = _("SNEASEL"),
         .cryId = CRY_SNEASEL,
         .natDexNum = NATIONAL_DEX_SNEASEL,
-        .categoryName = _("Sharp Claw"),
+        .categoryName = _("SHARP CLAW"),
         .height = 9,
         .weight = 280,
         .description = COMPOUND_STRING(
-            "A Sneasel scales trees by punching its\n"
+            "A SNEASEL scales trees by punching its\n"
             "hooked claws into the bark. It seeks out\n"
             "unguarded nests and steals eggs for food\n"
             "while the parents are away."),
@@ -5686,12 +5670,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = 35,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_PICKPOCKET },
+        .abilities = { ABILITY_PRESSURE, ABILITY_INNER_FOCUS, ABILITY_SHRED },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Weavile"),
+        .speciesName = _("WEAVILE"),
         .cryId = CRY_WEAVILE,
         .natDexNum = NATIONAL_DEX_WEAVILE,
-        .categoryName = _("Sharp Claw"),
+        .categoryName = _("SHARP CLAW"),
         .height = 11,
         .weight = 340,
         .description = COMPOUND_STRING(
@@ -5752,10 +5736,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_HISUIAN_FORMS
     [SPECIES_SNEASEL_HISUI] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 95,
-        .baseDefense   = 55,
-        .baseSpeed     = 115,
+        .baseHP        = 65,
+        .baseAttack    = 100,
+        .baseDefense   = 50,
+        .baseSpeed     = 110,
         .baseSpAttack  = 35,
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_POISON),
@@ -5768,13 +5752,13 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = 35,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_INNER_FOCUS, ABILITY_KEEN_EYE, ABILITY_PICKPOCKET },
+        .abilities = { ABILITY_UNBURDEN, ABILITY_POISON_TOUCH, ABILITY_SHRED },
         .bodyColor = BODY_COLOR_GRAY,
         .noFlip = TRUE,
-        .speciesName = _("Sneasel"),
+        .speciesName = _("SNEASEL"),
         .cryId = CRY_SNEASEL,
         .natDexNum = NATIONAL_DEX_SNEASEL,
-        .categoryName = _("Sharp Claw"),
+        .categoryName = _("SHARP CLAW"),
         .height = 9,
         .weight = 270,
         .description = COMPOUND_STRING(
@@ -5850,13 +5834,13 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_PRESSURE, ABILITY_UNBURDEN, ABILITY_POISON_TOUCH },
+        .abilities = { ABILITY_UNBURDEN, ABILITY_POISON_TOUCH, ABILITY_SHRED },
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = TRUE,
-        .speciesName = _("Sneasler"),
+        .speciesName = _("SNEASLER"),
         .cryId = CRY_SNEASLER,
         .natDexNum = NATIONAL_DEX_SNEASLER,
-        .categoryName = _("Free Climb"),
+        .categoryName = _("FREE CLIMB"),
         .height = 13,
         .weight = 430,
         .description = COMPOUND_STRING(
@@ -6211,12 +6195,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
-        .abilities = { ABILITY_MAGMA_ARMOR, ABILITY_FLAME_BODY, ABILITY_WEAK_ARMOR },
+        .abilities = { ABILITY_MAGMA_ARMOR, ABILITY_WATER_ABSORB, ABILITY_SIMPLE },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Slugma"),
+        .speciesName = _("SLUGMA"),
         .cryId = CRY_SLUGMA,
         .natDexNum = NATIONAL_DEX_SLUGMA,
-        .categoryName = _("Lava"),
+        .categoryName = _("LAVA"),
         .height = 7,
         .weight = 350,
         .description = COMPOUND_STRING(
@@ -6288,20 +6272,20 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
-        .abilities = { ABILITY_MAGMA_ARMOR, ABILITY_FLAME_BODY, ABILITY_WEAK_ARMOR },
+        .abilities = { ABILITY_MAGMA_ARMOR, ABILITY_WATER_ABSORB, ABILITY_SIMPLE },
         .bodyColor = BODY_COLOR_RED,
         .noFlip = TRUE,
-        .speciesName = _("Magcargo"),
+        .speciesName = _("MAGCARGO"),
         .cryId = CRY_MAGCARGO,
         .natDexNum = NATIONAL_DEX_MAGCARGO,
-        .categoryName = _("Lava"),
+        .categoryName = _("LAVA"),
         .height = 8,
         .weight = 550,
         .description = COMPOUND_STRING(
             "The shell on its back is made of hardened\n"
             "magma. Tens of thousands of years spent\n"
             "living in volcanic craters have turned\n"
-            "Magcargo's bodies into magma."),
+            "MAGCARGO's bodies into magma."),
         .pokemonScale = 332,
         .pokemonOffset = 15,
         .trainerScale = 256,
@@ -6811,12 +6795,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_REMORAID] =
     {
         .baseHP        = 35,
-        .baseAttack    = 65,
+        .baseAttack    = 55,
         .baseDefense   = 35,
         .baseSpeed     = 65,
-        .baseSpAttack  = 65,
+        .baseSpAttack  = 85,
         .baseSpDefense = 35,
-        .types = MON_TYPES(TYPE_WATER),
+        .types = MON_TYPES(TYPE_WATER, TYPE_FIRE),
         .catchRate = 190,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 60 : 78,
         .evYield_SpAttack = 1,
@@ -6826,19 +6810,19 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_2),
     #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_HUSTLE, ABILITY_SNIPER, ABILITY_MOODY },
+        .abilities = { ABILITY_MOODY, ABILITY_SNIPER, ABILITY_MEGA_LAUNCHER },
     #else
         .abilities = { ABILITY_HUSTLE, ABILITY_NONE, ABILITY_MOODY },
     #endif
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Remoraid"),
+        .speciesName = _("REMORAID"),
         .cryId = CRY_REMORAID,
         .natDexNum = NATIONAL_DEX_REMORAID,
-        .categoryName = _("Jet"),
+        .categoryName = _("JET"),
         .height = 6,
         .weight = 120,
         .description = COMPOUND_STRING(
-            "A Remoraid uses its abdominal muscles\n"
+            "A REMORAID uses its abdominal muscles\n"
             "to forcefully expel swallowed water, then\n"
             "shoot down flying prey. When evolution\n"
             "approaches, it travels down rivers."),
@@ -6883,13 +6867,13 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_OCTILLERY] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 105,
+        .baseHP        = 95,
+        .baseAttack    = 95,
         .baseDefense   = 75,
         .baseSpeed     = 45,
-        .baseSpAttack  = 105,
+        .baseSpAttack  = 115,
         .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_WATER),
+        .types = MON_TYPES(TYPE_WATER, TYPE_FIRE),
         .catchRate = 75,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 168 : 164,
         .evYield_Attack = 1,
@@ -6900,15 +6884,15 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_2),
     #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_SUCTION_CUPS, ABILITY_SNIPER, ABILITY_MOODY },
+        .abilities = { ABILITY_MOODY, ABILITY_SNIPER, ABILITY_MEGA_LAUNCHER },
     #else
         .abilities = { ABILITY_SUCTION_CUPS, ABILITY_NONE, ABILITY_MOODY },
     #endif
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Octillery"),
+        .speciesName = _("OCTILLERY"),
         .cryId = CRY_OCTILLERY,
         .natDexNum = NATIONAL_DEX_OCTILLERY,
-        .categoryName = _("Jet"),
+        .categoryName = _("JET"),
         .height = 9,
         .weight = 285,
         .description = COMPOUND_STRING(
@@ -6972,12 +6956,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_DELIBIRD
     [SPECIES_DELIBIRD] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 55,
-        .baseDefense   = 45,
-        .baseSpeed     = 75,
+        .baseHP        = 65,
+        .baseAttack    = 105,
+        .baseDefense   = 65,
+        .baseSpeed     = 100,
         .baseSpAttack  = 65,
-        .baseSpDefense = 45,
+        .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_ICE, TYPE_FLYING),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 116 : 183,
@@ -6987,20 +6971,20 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
-        .abilities = { ABILITY_VITAL_SPIRIT, ABILITY_HUSTLE, ABILITY_INSOMNIA },
+        .abilities = { ABILITY_VITAL_SPIRIT, ABILITY_TECHNICIAN, ABILITY_HOSPITALITY },
         .bodyColor = BODY_COLOR_RED,
         .noFlip = TRUE,
-        .speciesName = _("Delibird"),
+        .speciesName = _("DELIBIRD"),
         .cryId = CRY_DELIBIRD,
         .natDexNum = NATIONAL_DEX_DELIBIRD,
-        .categoryName = _("Delivery"),
+        .categoryName = _("DELIVERY"),
         .height = 9,
         .weight = 160,
         .description = COMPOUND_STRING(
             "It carries food bundled up in its tail.\n"
             "There was a famous explorer who\n"
             "managed to scale Mt. Everest thanks\n"
-            "to a Delibird sharing its food."),
+            "to a DELIBIRD sharing its food."),
         .pokemonScale = 293,
         .pokemonOffset = 11,
         .trainerScale = 256,
@@ -7037,6 +7021,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sDelibirdLevelUpLearnset,
         .teachableLearnset = sDelibirdTeachableLearnset,
         .eggMoveLearnset = sDelibirdEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_IRON_BUNDLE}),
     },
 #endif //P_FAMILY_DELIBIRD
 
@@ -7194,8 +7179,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_SKARMORY
     [SPECIES_SKARMORY] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 80,
+        .baseHP        = 75,
+        .baseAttack    = 100,
         .baseDefense   = 140,
         .baseSpeed     = 70,
         .baseSpAttack  = 40,
@@ -7210,18 +7195,18 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_KEEN_EYE, ABILITY_STURDY, ABILITY_WEAK_ARMOR },
+        .abilities = { ABILITY_BATTLE_ARMOR, ABILITY_STURDY, ABILITY_SHARPNESS },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Skarmory"),
+        .speciesName = _("SKARMORY"),
         .cryId = CRY_SKARMORY,
         .natDexNum = NATIONAL_DEX_SKARMORY,
-        .categoryName = _("Armor Bird"),
+        .categoryName = _("ARMOR BIRD"),
         .height = 17,
         .weight = 505,
         .description = COMPOUND_STRING(
             "A POKéMON that has a body and wings of\n"
             "steel. People in the past used feathers\n"
-            "fallen from Skarmory to make swords and\n"
+            "fallen from SKARMORY to make swords and\n"
             "knives."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
@@ -7265,10 +7250,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_GEN_9_MEGA_EVOLUTIONS
     [SPECIES_SKARMORY_MEGA] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 140,
+        .baseHP        = 75,
+        .baseAttack    = 150,
         .baseDefense   = 110,
-        .baseSpeed     = 110,
+        .baseSpeed     = 120,
         .baseSpAttack  = 40,
         .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_STEEL, TYPE_FLYING),
@@ -7281,16 +7266,16 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_STALWART, ABILITY_STALWART, ABILITY_STALWART },
+        .abilities = { ABILITY_GOOD_AS_GOLD, ABILITY_GOOD_AS_GOLD, ABILITY_GOOD_AS_GOLD },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Skarmory"),
+        .speciesName = _("SKARMORY"),
     #if P_MODIFIED_MEGA_CRIES
         .cryId = CRY_SKARMORY_MEGA,
     #else
         .cryId = CRY_SKARMORY,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_SKARMORY,
-        .categoryName = _("Armor Bird"),
+        .categoryName = _("ARMOR BIRD"),
         .height = 17,
         .weight = 404,
         .description = COMPOUND_STRING(
@@ -7566,16 +7551,16 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_PICKUP, ABILITY_NONE, ABILITY_SAND_VEIL },
+        .abilities = { ABILITY_ROUGH_SKIN, ABILITY_STURDY, ABILITY_STAMINA },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Phanpy"),
+        .speciesName = _("PHANPY"),
         .cryId = CRY_PHANPY,
         .natDexNum = NATIONAL_DEX_PHANPY,
-        .categoryName = _("Long Nose"),
+        .categoryName = _("LONG NOSE"),
         .height = 5,
         .weight = 335,
         .description = COMPOUND_STRING(
-            "Phanpy's big ears serve as broad fans.\n"
+            "PHANPY's big ears serve as broad fans.\n"
             "When it becomes hot, it flaps the ears\n"
             "busily to cool down. Even the young are\n"
             "very strong."),
@@ -7619,16 +7604,16 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sPhanpyLevelUpLearnset,
         .teachableLearnset = sPhanpyTeachableLearnset,
         .eggMoveLearnset = sPhanpyEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_DONPHAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_DONPHAN}, {EVO_ITEM, ITEM_SUN_STONE, SPECIES_GREAT_TUSK}, {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_IRON_TREADS}),
     },
 
     [SPECIES_DONPHAN] =
     {
         .baseHP        = 90,
         .baseAttack    = 120,
-        .baseDefense   = 120,
+        .baseDefense   = 135,
         .baseSpeed     = 50,
-        .baseSpAttack  = 60,
+        .baseSpAttack  = 50,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_GROUND),
         .catchRate = 60,
@@ -7640,16 +7625,16 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_STURDY, ABILITY_NONE, ABILITY_SAND_VEIL },
+        .abilities = { ABILITY_ROUGH_SKIN, ABILITY_STURDY, ABILITY_STAMINA },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Donphan"),
+        .speciesName = _("DONPHAN"),
         .cryId = CRY_DONPHAN,
         .natDexNum = NATIONAL_DEX_DONPHAN,
-        .categoryName = _("Armor"),
+        .categoryName = _("ARMOR"),
         .height = 11,
         .weight = 1200,
         .description = COMPOUND_STRING(
-            "A Donphan is so strong it can easily haul\n"
+            "A DONPHAN is so strong it can easily haul\n"
             "a dump truck. Its hide has toughened to a\n"
             "rock-hard state. An ordinary sort of\n"
             "attack won't even leave a scratch."),
@@ -7728,14 +7713,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .abilities = { ABILITY_INTIMIDATE, ABILITY_NONE, ABILITY_SAP_SIPPER },
     #endif
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Stantler"),
+        .speciesName = _("STANTLER"),
         .cryId = CRY_STANTLER,
         .natDexNum = NATIONAL_DEX_STANTLER,
-        .categoryName = _("Big Horn"),
+        .categoryName = _("BIG HORN"),
         .height = 14,
         .weight = 712,
         .description = COMPOUND_STRING(
-            "Stantler's magnificent antlers were\n"
+            "STANTLER's magnificent antlers were\n"
             "once traded at high prices as works of art.\n"
             "As a result, this POKéMON was hunted\n"
             "close to extinction."),
@@ -7800,10 +7785,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_INTIMIDATE, ABILITY_FRISK, ABILITY_SAP_SIPPER },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Wyrdeer"),
+        .speciesName = _("WYRDEER"),
         .cryId = CRY_WYRDEER,
         .natDexNum = NATIONAL_DEX_WYRDEER,
-        .categoryName = _("Big Horn"),
+        .categoryName = _("BIG HORN"),
         .height = 18,
         .weight = 951,
         .description = COMPOUND_STRING(
@@ -8023,19 +8008,19 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
     #if P_UPDATED_ABILITIES >= GEN_7
-        .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_INNER_FOCUS },
+        .abilities = { ABILITY_VOLT_ABSORB, ABILITY_INNER_FOCUS, ABILITY_QUICK_FEET },
     #else
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_VOLT_ABSORB },
     #endif
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Raikou"),
+        .speciesName = _("RAIKOU"),
         .cryId = CRY_RAIKOU,
         .natDexNum = NATIONAL_DEX_RAIKOU,
-        .categoryName = _("Thunder"),
+        .categoryName = _("THUNDER"),
         .height = 19,
         .weight = 1780,
         .description = COMPOUND_STRING(
-            "Raikou embodies the speed of lightning.\n"
+            "RAIKOU embodies the speed of lightning.\n"
             "Its roars send shock waves shuddering\n"
             "through the air and ground as if\n"
             "lightning bolts were crashing down."),
@@ -8105,19 +8090,19 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
     #if P_UPDATED_ABILITIES >= GEN_7
-        .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_INNER_FOCUS },
+        .abilities = { ABILITY_FLASH_FIRE, ABILITY_INNER_FOCUS, ABILITY_GUTS },
     #else
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_FLASH_FIRE },
     #endif
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Entei"),
+        .speciesName = _("ENTEI"),
         .cryId = CRY_ENTEI,
         .natDexNum = NATIONAL_DEX_ENTEI,
-        .categoryName = _("Volcano"),
+        .categoryName = _("VOLCANO"),
         .height = 21,
         .weight = 1980,
         .description = COMPOUND_STRING(
-            "Entei embodies the passion of magma.\n"
+            "ENTEI embodies the passion of magma.\n"
             "It is thought to have been born in the\n"
             "eruption of a volcano. It blasts fire that\n"
             "consumes all that it touches."),
@@ -8186,19 +8171,19 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
     #if P_UPDATED_ABILITIES >= GEN_7
-        .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_INNER_FOCUS },
+        .abilities = { ABILITY_WATER_ABSORB, ABILITY_INNER_FOCUS, ABILITY_HYDRATION },
     #else
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_WATER_ABSORB },
     #endif
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Suicune"),
+        .speciesName = _("SUICUNE"),
         .cryId = CRY_SUICUNE,
         .natDexNum = NATIONAL_DEX_SUICUNE,
-        .categoryName = _("Aurora"),
+        .categoryName = _("AURORA"),
         .height = 20,
         .weight = 1870,
         .description = COMPOUND_STRING(
-            "Suicune embodies the compassion of\n"
+            "SUICUNE embodies the compassion of\n"
             "a pure spring of water. It runs across\n"
             "the land with gliding elegance. It has the\n"
             "power to purify dirty water."),
@@ -8244,11 +8229,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_LARVITAR
     [SPECIES_LARVITAR] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 64,
+        .baseHP        = 60,
+        .baseAttack    = 84,
         .baseDefense   = 50,
         .baseSpeed     = 41,
-        .baseSpAttack  = 45,
+        .baseSpAttack  = 60,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_ROCK, TYPE_GROUND),
         .catchRate = 45,
@@ -8259,16 +8244,16 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
-        .abilities = { ABILITY_GUTS, ABILITY_NONE, ABILITY_SAND_VEIL },
+        .abilities = { ABILITY_GUTS, ABILITY_UNNERVE, ABILITY_LAST_BASTION },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Larvitar"),
+        .speciesName = _("LARVITAR"),
         .cryId = CRY_LARVITAR,
         .natDexNum = NATIONAL_DEX_LARVITAR,
-        .categoryName = _("Rock Skin"),
+        .categoryName = _("ROCK SKIN"),
         .height = 6,
         .weight = 720,
         .description = COMPOUND_STRING(
-            "A Larvitar is born deep under the ground.\n"
+            "A LARVITAR is born deep under the ground.\n"
             "It must eat its way through the soil above\n"
             "and reach the surface for it to see its\n"
             "parents' faces."),
@@ -8314,12 +8299,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_PUPITAR] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 84,
-        .baseDefense   = 70,
+        .baseHP        = 80,
+        .baseAttack    = 114,
+        .baseDefense   = 90,
         .baseSpeed     = 51,
-        .baseSpAttack  = 65,
-        .baseSpDefense = 70,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_ROCK, TYPE_GROUND),
         .catchRate = 45,
         .expYield = 144,
@@ -8329,16 +8314,16 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
-        .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_NONE },
+        .abilities = { ABILITY_SHED_SKIN, ABILITY_UNNERVE, ABILITY_LAST_BASTION },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Pupitar"),
+        .speciesName = _("PUPITAR"),
         .cryId = CRY_PUPITAR,
         .natDexNum = NATIONAL_DEX_PUPITAR,
-        .categoryName = _("Hard Shell"),
+        .categoryName = _("HARD SHELL"),
         .height = 12,
         .weight = 1520,
         .description = COMPOUND_STRING(
-            "A Pupitar creates a gas inside its body\n"
+            "A PUPITAR creates a gas inside its body\n"
             "that it ejects under compression to propel\n"
             "itself like a jet. Its body can withstand\n"
             "a collision with solid steel."),
@@ -8376,7 +8361,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sPupitarLevelUpLearnset,
         .teachableLearnset = sPupitarTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_TYRANITAR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_TYRANITAR}, {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_IRON_THORNS}),
     },
 
     [SPECIES_TYRANITAR] =
@@ -8402,16 +8387,16 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
-        .abilities = { ABILITY_SAND_STREAM, ABILITY_NONE, ABILITY_UNNERVE },
+        .abilities = { ABILITY_SAND_STREAM, ABILITY_UNNERVE, ABILITY_LAST_BASTION },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Tyranitar"),
+        .speciesName = _("TYRANITAR"),
         .cryId = CRY_TYRANITAR,
         .natDexNum = NATIONAL_DEX_TYRANITAR,
-        .categoryName = _("Armor"),
+        .categoryName = _("ARMOR"),
         .height = 20,
         .weight = 2020,
         .description = COMPOUND_STRING(
-            "A Tyranitar is so overwhelmingly powerful,\n"
+            "A TYRANITAR is so overwhelmingly powerful,\n"
             "it can bring down a whole mountain to make\n"
             "its nest. It roams in mountains seeking\n"
             "new opponents to fight."),
@@ -8475,14 +8460,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
         .abilities = { ABILITY_SAND_STREAM, ABILITY_SAND_STREAM, ABILITY_SAND_STREAM },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Tyranitar"),
+        .speciesName = _("TYRANITAR"),
     #if P_MODIFIED_MEGA_CRIES
         .cryId = CRY_TYRANITAR_MEGA,
     #else
         .cryId = CRY_TYRANITAR,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_TYRANITAR,
-        .categoryName = _("Armor"),
+        .categoryName = _("ARMOR"),
         .height = 25,
         .weight = 2550,
         .description = COMPOUND_STRING(
@@ -8539,7 +8524,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 110,
         .baseSpAttack  = 90,
         .baseSpDefense = 154,
-        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FLYING),
+        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_WATER),
         .catchRate = 3,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 340,
@@ -8554,16 +8539,16 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = 0,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_MULTISCALE },
+        .abilities = { ABILITY_LEVITATE, ABILITY_PRESSURE, ABILITY_MULTISCALE },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Lugia"),
+        .speciesName = _("LUGIA"),
         .cryId = CRY_LUGIA,
         .natDexNum = NATIONAL_DEX_LUGIA,
-        .categoryName = _("Diving"),
+        .categoryName = _("DIVING"),
         .height = 52,
         .weight = 2160,
         .description = COMPOUND_STRING(
-            "Lugia is so powerful even a light\n"
+            "LUGIA is so powerful even a light\n"
             "fluttering of its wings can blow apart\n"
             "houses. As a result, it chooses to live out\n"
             "of sight deep under the sea."),
@@ -8645,12 +8630,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = 0,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_REGENERATOR },
+        .abilities = { ABILITY_SERENE_GRACE, ABILITY_INTIMIDATE, ABILITY_REGENERATOR },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Ho-Oh"),
+        .speciesName = _("HO-OH"),
         .cryId = CRY_HO_OH,
         .natDexNum = NATIONAL_DEX_HO_OH,
-        .categoryName = _("Rainbow"),
+        .categoryName = _("RAINBOW"),
         .height = 38,
         .weight = 1990,
         .description = COMPOUND_STRING(
