@@ -32,7 +32,7 @@ DOUBLE_BATTLE_TEST("Overcoat blocks damage from sandstorm")
 {
     GIVEN {
         PLAYER(SPECIES_WYNAUT)    { Speed(50); }
-        PLAYER(SPECIES_HELIOLISK) { Speed(40); Ability(ABILITY_SAND_VEIL); }
+        PLAYER(SPECIES_HELIOLISK) { Speed(40); Ability(ABILITY_SAND_GUARD); }
         OPPONENT(SPECIES_PINECO)  { Speed(30); Ability(ABILITY_OVERCOAT); }
         OPPONENT(SPECIES_STARLY)     { Speed(20); }
     } WHEN {

@@ -1687,7 +1687,7 @@ static s32 GetSwitchinWeatherImpact(enum BattlerId battler)
         }
         else if ((weather  & B_WEATHER_SANDSTORM)
             && !IS_BATTLER_ANY_TYPE(battler, TYPE_ROCK, TYPE_GROUND, TYPE_STEEL)
-            && ability != ABILITY_SAND_VEIL && ability != ABILITY_SAND_RUSH && ability != ABILITY_SAND_FORCE)
+            && ability != ABILITY_SAND_GUARD && ability != ABILITY_SAND_RUSH && ability != ABILITY_SAND_FORCE)
         {
             weatherImpact = maxHP / 16;
             if (weatherImpact == 0)
@@ -2736,7 +2736,7 @@ static void SetBattlerStatStagesForSwitchin(enum BattlerId battler, enum Battler
     case ABILITY_DAUNTLESS_SHIELD:
         gBattleMons[battler].statStages[STAT_DEF] += 1;
         break;
-    case ABILITY_SUPREME_OVERLORD:
+    case ABILITY_LAST_BASTION:
         break;
     case ABILITY_DOWNLOAD:
         gBattleMons[battler].statStages[GetDownloadStat(battler)] += 1;

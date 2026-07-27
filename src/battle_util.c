@@ -3455,7 +3455,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 effect++;
             }
             break;
-        case ABILITY_SUPREME_OVERLORD:
+        case ABILITY_LAST_BASTION:
             if (shouldAbilityTrigger)
             {
                 gBattleStruct->supremeOverlordCounter[battler] = min(5, gBattleStruct->faintCounter[GetBattlerTrainer(battler)]);
@@ -6575,7 +6575,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
         if (IsSlicingMove(move))
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
-    case ABILITY_SUPREME_OVERLORD:
+    case ABILITY_LAST_BASTION:
         modifier = uq4_12_multiply(modifier, GetSupremeOverlordModifier(battlerAtk));
         break;
     default:
@@ -10293,9 +10293,9 @@ u32 GetTotalAccuracy(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum 
     // Target's ability
     switch (defAbility)
     {
-    case ABILITY_SAND_VEIL:
+    case ABILITY_SAND_GUARD:
         if (attackerWeather & B_WEATHER_SANDSTORM)
-            calc = (calc * 80) / 100; // 1.2 sand veil loss
+            calc = (calc * 80) / 100; // 1.2 sand guard loss
         break;
     case ABILITY_SNOW_CLOAK:
         if (attackerWeather & B_WEATHER_ICY_ANY)

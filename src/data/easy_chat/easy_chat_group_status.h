@@ -275,9 +275,9 @@ const struct EasyChatWordInfo gEasyChatGroup_Status[] = {
         .alphabeticalOrder = EC_INDEX(EC_WORD_INTIMIDATE),
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_SAND_VEIL)] =
+    [EC_INDEX(EC_WORD_SAND_GUARD)] =
     {
-        .text = COMPOUND_STRING("SAND VEIL"),
+        .text = COMPOUND_STRING("SAND GUARD"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_KEEN_EYE),
         .enabled = TRUE,
     },
@@ -452,7 +452,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Status[] = {
     [EC_INDEX(EC_WORD_FLYING)] =
     {
         .text = COMPOUND_STRING("FLYING"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SAND_VEIL),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_SAND_GUARD),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_DROUGHT)] =

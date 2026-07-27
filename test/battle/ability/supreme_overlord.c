@@ -8,7 +8,7 @@ DOUBLE_BATTLE_TEST("Supreme Overlord boosts Attack by an additive 10% per fainte
     PARAMETRIZE { switchMon = TRUE; }
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_MEMENTO) == EFFECT_MEMENTO);
-        PLAYER(SPECIES_KINGAMBIT) { Ability(ABILITY_SUPREME_OVERLORD); }
+        PLAYER(SPECIES_KINGAMBIT) { Ability(ABILITY_LAST_BASTION); }
         PLAYER(SPECIES_PAWNIARD);
         PLAYER(SPECIES_PAWNIARD);
         PLAYER(SPECIES_PAWNIARD);
@@ -23,7 +23,7 @@ DOUBLE_BATTLE_TEST("Supreme Overlord boosts Attack by an additive 10% per fainte
         TURN { MOVE(playerLeft, MOVE_SCRATCH, target: opponentLeft); }
     } SCENE {
         if (switchMon) {
-            ABILITY_POPUP(playerLeft, ABILITY_SUPREME_OVERLORD);
+            ABILITY_POPUP(playerLeft, ABILITY_LAST_BASTION);
             MESSAGE("Kingambit gained strength from the fallen!");
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, playerLeft);
@@ -43,7 +43,7 @@ DOUBLE_BATTLE_TEST("Supreme Overlord's boost caps at a 1.5x multipler", s16 dama
         PLAYER(SPECIES_PAWNIARD);
         PLAYER(SPECIES_PAWNIARD);
         PLAYER(SPECIES_PAWNIARD);
-        PLAYER(SPECIES_KINGAMBIT) { Ability(ABILITY_SUPREME_OVERLORD); }
+        PLAYER(SPECIES_KINGAMBIT) { Ability(ABILITY_LAST_BASTION); }
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -57,7 +57,7 @@ DOUBLE_BATTLE_TEST("Supreme Overlord's boost caps at a 1.5x multipler", s16 dama
         TURN { SWITCH(playerRight, 3); }
         TURN { MOVE(playerRight, MOVE_SCRATCH, target: opponentLeft); }
     } SCENE {
-        ABILITY_POPUP(playerRight, ABILITY_SUPREME_OVERLORD);
+        ABILITY_POPUP(playerRight, ABILITY_LAST_BASTION);
         MESSAGE("Kingambit gained strength from the fallen!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, playerRight);
         HP_BAR(opponentLeft, captureDamage: &results[i].damage);
@@ -73,7 +73,7 @@ SINGLE_BATTLE_TEST("Supreme Overlord does not boost attack if party members are 
     PARAMETRIZE { fainted = FALSE; }
     PARAMETRIZE { fainted = TRUE; }
     GIVEN {
-        PLAYER(SPECIES_KINGAMBIT) { Ability(ABILITY_SUPREME_OVERLORD); }
+        PLAYER(SPECIES_KINGAMBIT) { Ability(ABILITY_LAST_BASTION); }
         PLAYER(SPECIES_PAWNIARD) { HP(fainted ? 0 : 1); }
         PLAYER(SPECIES_PAWNIARD) { HP(fainted ? 0 : 1); }
         PLAYER(SPECIES_PAWNIARD) { HP(fainted ? 0 : 1); }
@@ -84,7 +84,7 @@ SINGLE_BATTLE_TEST("Supreme Overlord does not boost attack if party members are 
         TURN { MOVE(player, MOVE_SCRATCH, target: opponent); }
     } SCENE {
         NONE_OF {
-            ABILITY_POPUP(player, ABILITY_SUPREME_OVERLORD);
+            ABILITY_POPUP(player, ABILITY_LAST_BASTION);
             MESSAGE("Kingambit gained strength from the fallen!");
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, player);
@@ -99,7 +99,7 @@ SINGLE_BATTLE_TEST("Supreme Overlord's message displays correctly after all batt
     GIVEN {
         ASSUME(IsExplosionMove(MOVE_EXPLOSION));
         PLAYER(SPECIES_WOBBUFFET) { HP(1); }
-        PLAYER(SPECIES_KINGAMBIT) { Ability(ABILITY_SUPREME_OVERLORD); }
+        PLAYER(SPECIES_KINGAMBIT) { Ability(ABILITY_LAST_BASTION); }
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -110,7 +110,7 @@ SINGLE_BATTLE_TEST("Supreme Overlord's message displays correctly after all batt
         // Everyone faints.
         SEND_IN_MESSAGE("Kingambit");
         MESSAGE("2 sent out Wobbuffet!");
-        ABILITY_POPUP(player, ABILITY_SUPREME_OVERLORD);
+        ABILITY_POPUP(player, ABILITY_LAST_BASTION);
         MESSAGE("Kingambit gained strength from the fallen!");
     }
 }
@@ -122,7 +122,7 @@ SINGLE_BATTLE_TEST("Supreme Overlord's message displays correctly after all batt
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_KINGAMBIT) { Ability(ABILITY_SUPREME_OVERLORD); }
+        OPPONENT(SPECIES_KINGAMBIT) { Ability(ABILITY_LAST_BASTION); }
     } WHEN {
         TURN { MOVE(player, MOVE_EXPLOSION); SEND_OUT(player, 1); SEND_OUT(opponent, 1); }
     } SCENE {
@@ -131,7 +131,7 @@ SINGLE_BATTLE_TEST("Supreme Overlord's message displays correctly after all batt
         // Everyone faints.
         SEND_IN_MESSAGE("Wobbuffet");
         MESSAGE("2 sent out Kingambit!");
-        ABILITY_POPUP(opponent, ABILITY_SUPREME_OVERLORD);
+        ABILITY_POPUP(opponent, ABILITY_LAST_BASTION);
         MESSAGE("The opposing Kingambit gained strength from the fallen!");
     }
 }
@@ -145,7 +145,7 @@ MULTI_BATTLE_TEST("Supreme Overlord does not count a partner Trainer's fainted P
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_MEMENTO) == EFFECT_MEMENTO);
         PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_KINGAMBIT) { Ability(ABILITY_SUPREME_OVERLORD); }
+        PLAYER(SPECIES_KINGAMBIT) { Ability(ABILITY_LAST_BASTION); }
         PARTNER(SPECIES_WOBBUFFET);
         PARTNER(SPECIES_WOBBUFFET);
         OPPONENT_A(SPECIES_WOBBUFFET);
@@ -157,7 +157,7 @@ MULTI_BATTLE_TEST("Supreme Overlord does not count a partner Trainer's fainted P
         TURN { MOVE(playerLeft, MOVE_SCRATCH, target: opponentLeft); }
     } SCENE {
         NONE_OF {
-            ABILITY_POPUP(playerLeft, ABILITY_SUPREME_OVERLORD);
+            ABILITY_POPUP(playerLeft, ABILITY_LAST_BASTION);
             MESSAGE("Kingambit gained strength from the fallen!");
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, playerLeft);
@@ -180,7 +180,7 @@ MULTI_BATTLE_TEST("Supreme Overlord does not count an opposing partner Trainer's
         OPPONENT_A(SPECIES_WOBBUFFET);
         OPPONENT_A(SPECIES_WOBBUFFET);
         OPPONENT_B(SPECIES_WOBBUFFET);
-        OPPONENT_B(SPECIES_KINGAMBIT) { Ability(ABILITY_SUPREME_OVERLORD); }
+        OPPONENT_B(SPECIES_KINGAMBIT) { Ability(ABILITY_LAST_BASTION); }
     } WHEN {
         if (faintPartner)
             TURN { MOVE(opponentLeft, MOVE_MEMENTO, target: playerLeft); SEND_OUT(opponentLeft, 1); }
@@ -188,7 +188,7 @@ MULTI_BATTLE_TEST("Supreme Overlord does not count an opposing partner Trainer's
         TURN { MOVE(opponentRight, MOVE_SCRATCH, target: playerLeft); }
     } SCENE {
         NONE_OF {
-            ABILITY_POPUP(opponentRight, ABILITY_SUPREME_OVERLORD);
+            ABILITY_POPUP(opponentRight, ABILITY_LAST_BASTION);
             MESSAGE("The opposing Kingambit gained strength from the fallen!");
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponentRight);

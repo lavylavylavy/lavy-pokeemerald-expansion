@@ -141,7 +141,7 @@ static bool32 HandleEndTurnWeatherDamage(enum BattlerId battler)
         }
         break;
     case BATTLE_WEATHER_SANDSTORM:
-        if (ability != ABILITY_SAND_VEIL
+        if (ability != ABILITY_SAND_GUARD
          && ability != ABILITY_SAND_FORCE
          && ability != ABILITY_SAND_RUSH
          && ability != ABILITY_OVERCOAT

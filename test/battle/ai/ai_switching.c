@@ -2074,7 +2074,7 @@ AI_SINGLE_BATTLE_TEST("AI_FLAG_SMART_SWITCHING: AI won't send out defensive mon 
             Level(15);
             Moves(MOVE_WING_ATTACK, MOVE_QUICK_ATTACK, MOVE_BULLDOZE);
             Item(ITEM_ORAN_BERRY);
-            Ability(ABILITY_SAND_VEIL);
+            Ability(ABILITY_SAND_GUARD);
             Nature(NATURE_ADAMANT);
             HPIV(31);
             AttackIV(31);

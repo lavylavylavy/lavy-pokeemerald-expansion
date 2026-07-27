@@ -369,7 +369,7 @@ static const struct BardSoundTemplate sBardSoundTemplates_Status[][MAX_BARD_SOUN
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [EC_INDEX(EC_WORD_SAND_VEIL)] = {
+    [EC_INDEX(EC_WORD_SAND_GUARD)] = {
         { .songId = PHONEME_ID(PH_TRAP_SOLO) },
         { .songId = PHONEME_ID(PH_FACE_BLEND) },
         PREV_BARD_SOUND,

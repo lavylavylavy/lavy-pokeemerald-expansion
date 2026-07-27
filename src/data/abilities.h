@@ -62,10 +62,10 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .breakable = TRUE,
     },
 
-    [ABILITY_SAND_VEIL] =
+    [ABILITY_SAND_GUARD] =
     {
-        .name = _("Sand Veil"),
-        .description = COMPOUND_STRING("Ups evasion in a sandstorm."),
+        .name = _("SAND GUARD"),
+        .description = COMPOUND_STRING("Ups SP. DEF in a sandstorm."),
         .aiRating = 3,
         .breakable = TRUE,
     },
@@ -2259,14 +2259,14 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_SHARPNESS] =
     {
-        .name = _("Sharpness"),
+        .name = _("SHARPNESS"),
         .description = COMPOUND_STRING("Strengthens slicing moves."),
         .aiRating = 7,
     },
 
-    [ABILITY_SUPREME_OVERLORD] =
+    [ABILITY_LAST_BASTION] =
     {
-        .name = _("Supreme Overlord"),
+        .name = _("LAST BASTION"),
         .description = COMPOUND_STRING("Inherits fallen's strength."),
         .aiRating = 6,
     },
@@ -2472,4 +2472,318 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Spicy Spray"),
         .description = COMPOUND_STRING("Burns the foe when damaged."),
     },
+
+    [ABILITY_HEAT_LIGHTNING] =
+    {
+        .name = _("HEAT LIGHTNING"),
+        .description = COMPOUND_STRING("ELECTRIC burns foes."),
+    },
+    
+    [ABILITY_PROVIDENCE] =
+    {
+        .name = _("PROVIDENCE"),
+        .description = COMPOUND_STRING("User & ally heal 1/6 in sun."),
+    },
+    
+    [ABILITY_SNOW_FORCE] =
+    {
+        .name = _("SNOW FORCE"),
+        .description = COMPOUND_STRING("Powers up in snow."),
+    },
+    
+    [ABILITY_CONDESCEND] =
+    {
+        .name = _("CONDESCEND"),
+        .description = COMPOUND_STRING("Gazing paralyzes foes."),
+    },
+
+    [ABILITY_HEAVYWEIGHT] =
+    {
+        .name = _("HEAVYWEIGHT"),
+        .description = COMPOUND_STRING("Heavy moves ignore resists."),
+    },
+    
+    [ABILITY_DESPERADO] =
+    {
+        .name = _("DESPERADO"),
+        .description = COMPOUND_STRING("HAZE & TAUNT field on entry."),
+    },
+    
+    [ABILITY_SPIRIT_BOND] =
+    {
+        .name = _("SPIRIT BOND"),
+        .description = COMPOUND_STRING("Boosts spirit moves in mist."),
+    },
+    
+    [ABILITY_TRASH_TALK] =
+    {
+        .name = _("TRASH TALK"),
+        .description = COMPOUND_STRING("Trash & sound TAUNT foes."),
+    },
+    
+    [ABILITY_PUGILIST] =
+    {
+        .name = _("PUGILIST"),
+        .description = COMPOUND_STRING("Powers up FIGHTING."),
+    },
+    
+    [ABILITY_COLD_BLOODED] =
+    {
+        .name = _("COLD-BLOODED"),
+        .description = COMPOUND_STRING("Ups ATTACK in sun."),
+    },
+    
+    [ABILITY_ELECTROSHIELD] =
+    {
+        .name = _("ELECTROSHIELD"),
+        .description = COMPOUND_STRING("Ups SP. DEF in electric terrain."),
+    },
+    
+    [ABILITY_INSULATION] =
+    {
+        .name = _("INSULATION"),
+        .description = COMPOUND_STRING("Weakens ELECTRIC for field."),
+    },
+    
+    [ABILITY_MEGAFAUNA] =
+    {
+        .name = _("MEGAFAUNA"),
+        .description = COMPOUND_STRING("Ups DEFENSE in sun."),
+    },
+    
+    [ABILITY_CREPUSCULAR] =
+    {
+        .name = _("CREPUSCULAR"),
+        .description = COMPOUND_STRING("User is DARK-type."),
+    },
+    
+    [ABILITY_SPELLCASTER] =
+    {
+        .name = _("SPELLCASTER"),
+        .description = COMPOUND_STRING("Ups ICE, FIRE, & ELECTRIC."),
+    },
+    
+    [ABILITY_SAVANT] =
+    {
+        .name = _("SAVANT"),
+        .description = COMPOUND_STRING("Powers up PSYCHIC moves."),
+    },
+    
+    [ABILITY_MASTERMIND] =
+    {
+        .name = _("MASTERMIND"),
+        .description = COMPOUND_STRING("Powers up from stat disparity."),
+    },
+    
+    [ABILITY_MISTY_CLOAK] =
+    {
+        .name = _("MISTY CLOAK"),
+        .description = COMPOUND_STRING("Ups SP. DEF in mist."),
+    },
+    
+    [ABILITY_JUGGERNAUT] =
+    {
+        .name = _("JUGGERNAUT"),
+        .description = COMPOUND_STRING("User takes no rest turns."),
+        
+    },
+    
+    [ABILITY_HARBINGER] =
+    {
+        .name = _("HARBINGER"),
+        .description = COMPOUND_STRING("Added effects are certain."),
+    },
+    
+    [ABILITY_DRACONIC] =
+    {
+        .name = _("DRACONIC"),
+        .description = COMPOUND_STRING("User is DRAGON-type."),
+    },
+    
+    [ABILITY_SAND_SPIRIT] =
+    {
+        .name = _("SAND SPIRIT"),
+        .description = COMPOUND_STRING("Sound is GROUND in sand."),
+    },
+    
+    [ABILITY_TOXIC_TOUCH] =
+    {
+        .name = _("TOXIC TOUCH"),
+        .description = COMPOUND_STRING("Touch poisons & infatuates."),
+    },
+    
+    [ABILITY_KICKBOXER] =
+    {
+        .name = _("KICKBOXER"),
+        .description = COMPOUND_STRING("Ups kicking moves."),
+    },
+    
+    [ABILITY_SPACE_WARP] =
+    {
+        .name = _("SPACE WARP"),
+        .description = COMPOUND_STRING("Sets GRAVITY on entry."),
+    },
+    
+    [ABILITY_TIME_WARP] =
+    {
+        .name = _("TIME WARP"),
+        .description = COMPOUND_STRING("Allies' status gains priority."),
+    },
+    
+    [ABILITY_SHRED] =
+    {
+        .name = _("SHRED"),
+        .description = COMPOUND_STRING("Claws & Biting lower DEFENSE."),
+    },
+    
+    [ABILITY_VAMPIRIC] =
+    {
+        .name = _("VAMPIRIC"),
+        .description = COMPOUND_STRING("Heals from biting moves."),
+    },
+    
+    [ABILITY_BLITZ_BOXER] =
+    {
+        .name = _("BLITZ BOXER"),
+        .description = COMPOUND_STRING("Punching moves go first."),
+    },
+    
+    [ABILITY_WIND_WAKER] =
+    {
+        .name = _("WIND WAKER"),
+        .description = COMPOUND_STRING("Summons TAILWIND on entry."),
+    },
+    
+    [ABILITY_GEOLOGIC] =
+    {
+        .name = _("GEOLOGIC"),
+        .description = COMPOUND_STRING("Ups ROCK. Weakens “supereffective”."),
+    },
+    
+    [ABILITY_PERMAFROST] =
+    {
+        .name = _("PERMAFROST"),
+        .description = COMPOUND_STRING("Ups ICE. Weakens “supereffective”."),
+    },
+    
+    [ABILITY_INVINCIBLE] =
+    {
+        .name = _("INVINCIBLE"),
+        .description = COMPOUND_STRING("Ups STEEL; Weakens “supereffective”."),
+    },
+    
+    [ABILITY_ARCHITECT] =
+    {
+        .name = _("ARCHITECT"),
+        .description = COMPOUND_STRING("Starts weak. Ups ATTACK each turn."),
+    },
+    
+    [ABILITY_TRICKSTER] =
+    {
+        .name = _("TRICKSTER"),
+        .description = COMPOUND_STRING("Twists the dimensions on entry."),
+    },
+    
+    [ABILITY_SLUGGISH] =
+    {
+        .name = _("SLUGGISH"),
+        .description = COMPOUND_STRING("User has halved SPEED."),
+    },
+    
+    [ABILITY_SINGULARITY] =
+    {
+        .name = _("SINGULARITY"),
+        .description = COMPOUND_STRING("Draws in foes on status use."),
+    },
+    
+    [ABILITY_FRIGID_BODY] =
+    {
+        .name = _("FRIGID BODY"),
+        .description = COMPOUND_STRING("Frostbites the foe on contact."),
+    },
+    
+    [ABILITY_VANGUARD] =
+    {
+        .name = _("VANGUARD"),
+        .description = COMPOUND_STRING("Powers up first move."),
+    },
+    
+    [ABILITY_SHACKLE] =
+    {
+        .name = _("SHACKLE"),
+        .description = COMPOUND_STRING("GROUND moves knock foe down."),
+    },
+    
+    [ABILITY_TRACTOR_BEAM] =
+    {
+        .name = _("TRACTOR BEAM"),
+        .description = COMPOUND_STRING("Traps field with tractor beam."),
+    },
+    
+    [ABILITY_DEPLETION] =
+    {
+        .name = _("DEPLETION"),
+        .description = COMPOUND_STRING("Ups power, costs HP."),
+    },
+    
+    [ABILITY_DAO] =
+    {
+        .name = _("DAO"),
+        .description = COMPOUND_STRING("Ups all ICE, FIRE, & ELECTRIC."),
+    },
+    
+    [ABILITY_SWEET_DREAMS] =
+    {
+        .name = _("SWEET DREAMS"),
+        .description = COMPOUND_STRING("Sleep heals; User is COMATOSE."),
+    },
+    
+    [ABILITY_TRICKLE_DOWN] =
+    {
+        .name = _("TRICKLE DOWN"),
+        .description = COMPOUND_STRING("Recoil is passed to foe."),
+    },
+    
+    [ABILITY_DETONATE] =
+    {
+        .name = _("DETONATE"),
+        .description = COMPOUND_STRING("Fire sets off EXPLOSION."),
+    },
+    
+    [ABILITY_POINTY] =
+    {
+        .name = _("POINTY"),
+        .description = COMPOUND_STRING("Ups horn & jabbing moves."),
+    },
+    
+    [ABILITY_RESONANCE] =
+    {
+        .name = _("RESONANCE"),
+        .description = COMPOUND_STRING("Sound ignores resistance."),
+    },
+    
+    [ABILITY_IMMOLATE] =
+    {
+        .name = _("IMMOLATE"),
+        .description = COMPOUND_STRING("NORMAL moves are FIRE-type."),
+    },
+    
+    [ABILITY_FERTILIZE] =
+    {
+        .name = _("DEPLETION"),
+        .description = COMPOUND_STRING("NORMAL moves are GRASS-type."),
+    },
+    
+    [ABILITY_HEAVY_PINCER] =
+    {
+        .name = _("HEAVY PINCER"),
+        .description = COMPOUND_STRING("SP. ATK = ATTACK."),
+    },
+    
+    [ABILITY_ONE_TWO] =
+    {
+        .name = _("ONE-TWO"),
+        .description = COMPOUND_STRING("Punching moves hit twice."),
+    },
+    
 };

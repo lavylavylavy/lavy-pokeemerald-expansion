@@ -267,12 +267,12 @@ SINGLE_BATTLE_TEST("Mega Sol lowers the user's Thunder and Hurricane accuracy to
     }
 }
 
-SINGLE_BATTLE_TEST("Mega Sol ignores Sand Veil's accuracy drop")
+SINGLE_BATTLE_TEST("Mega Sol ignores Sand guard's accuracy drop")
 {
     PASSES_RANDOMLY(5, 5, RNG_ACCURACY);
     GIVEN {
         ASSUME(GetMoveAccuracy(MOVE_SCRATCH) == 100);
-        PLAYER(SPECIES_SANDSHREW) { Ability(ABILITY_SAND_VEIL); }
+        PLAYER(SPECIES_SANDSHREW) { Ability(ABILITY_SAND_GUARD); }
         OPPONENT(SPECIES_MEGANIUM) { Item(ITEM_MEGANIUMITE); }
     } WHEN {
         TURN { MOVE(player, MOVE_SANDSTORM); }

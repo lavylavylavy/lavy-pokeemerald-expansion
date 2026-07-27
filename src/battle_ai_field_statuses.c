@@ -152,7 +152,7 @@ static bool32 DoesAbilityBenefitFromWeather(enum Ability ability, u32 weather)
         return (weather & B_WEATHER_DAMAGING_ANY);
     case ABILITY_SAND_FORCE:
     case ABILITY_SAND_RUSH:
-    case ABILITY_SAND_VEIL:
+    case ABILITY_SAND_GUARD:
         return (weather & B_WEATHER_SANDSTORM);
     case ABILITY_ICE_BODY:
     case ABILITY_ICE_FACE:
