@@ -46,7 +46,7 @@ SINGLE_BATTLE_TEST("Simple Beam fails if target has an ability that can't be ove
     u32 species;
     enum Ability ability;
 
-    PARAMETRIZE { species = SPECIES_ARCEUS; ability = ABILITY_MULTITYPE; }
+    PARAMETRIZE { species = SPECIES_ARCEUS; ability = ABILITY_OMNIPOTENT; }
     PARAMETRIZE { species = SPECIES_AEGISLASH; ability = ABILITY_STANCE_CHANGE; }
     PARAMETRIZE { species = SPECIES_MINIOR; ability = ABILITY_SHIELDS_DOWN; }
     PARAMETRIZE { species = SPECIES_WISHIWASHI; ability = ABILITY_SCHOOLING; }
@@ -119,7 +119,7 @@ SINGLE_BATTLE_TEST("Worry Seed fails if target has an ability that can't be over
     u32 species;
     enum Ability ability;
 
-    PARAMETRIZE { species = SPECIES_ARCEUS; ability = ABILITY_MULTITYPE; }
+    PARAMETRIZE { species = SPECIES_ARCEUS; ability = ABILITY_OMNIPOTENT; }
     PARAMETRIZE { species = SPECIES_AEGISLASH; ability = ABILITY_STANCE_CHANGE; }
     PARAMETRIZE { species = SPECIES_MINIOR; ability = ABILITY_SHIELDS_DOWN; }
     PARAMETRIZE { species = SPECIES_WISHIWASHI; ability = ABILITY_SCHOOLING; }

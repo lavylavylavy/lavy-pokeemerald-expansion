@@ -55,7 +55,7 @@ SINGLE_BATTLE_TEST("Role Play and Doodle fail if target's ability can't be copie
 
     PARAMETRIZE { species = SPECIES_SHEDINJA; ability = ABILITY_WONDER_GUARD; }
     PARAMETRIZE { species = SPECIES_CASTFORM; ability = ABILITY_FORECAST; }
-    PARAMETRIZE { species = SPECIES_ARCEUS; ability = ABILITY_MULTITYPE; }
+    PARAMETRIZE { species = SPECIES_ARCEUS; ability = ABILITY_OMNIPOTENT; }
     PARAMETRIZE { species = SPECIES_CHERRIM; ability = ABILITY_FLOWER_GIFT; }
     PARAMETRIZE { species = SPECIES_ZORUA; ability = ABILITY_ILLUSION; }
     PARAMETRIZE { species = SPECIES_DARMANITAN; ability = ABILITY_ZEN_MODE; }
@@ -93,7 +93,7 @@ SINGLE_BATTLE_TEST("Role Play fails if user's ability can't be suppressed")
     u32 species;
     enum Ability ability;
 
-    PARAMETRIZE { species = SPECIES_ARCEUS; ability = ABILITY_MULTITYPE; }
+    PARAMETRIZE { species = SPECIES_ARCEUS; ability = ABILITY_OMNIPOTENT; }
     if (B_UPDATED_ABILITY_DATA >= GEN_7)
         PARAMETRIZE { species = SPECIES_DARMANITAN; ability = ABILITY_ZEN_MODE; }
     PARAMETRIZE { species = SPECIES_AEGISLASH; ability = ABILITY_STANCE_CHANGE; }

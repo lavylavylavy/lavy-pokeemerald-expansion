@@ -43,4 +43,4 @@ TO_DO_BATTLE_TEST("Soak/Magic Powder's type change overritten if the target tran
 TO_DO_BATTLE_TEST("(TERA) Soak/Magic Powder's type change overritten if the target Terastalizes");
 TO_DO_BATTLE_TEST("Soak/Magic Powder fails if the target is behind a Substitute");
 TO_DO_BATTLE_TEST("Soak/Magic Powder fails if the target is already Water/Psychic");
-TO_DO_BATTLE_TEST("Soak/Magic Powder fails if the target has Multitype or RKS System");
+TO_DO_BATTLE_TEST("Soak/Magic Powder fails if the target has OMNIPOTENT or RKS System");

@@ -5671,7 +5671,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
         .abilities = { ABILITY_LEVITATE, ABILITY_COMPETITIVE, ABILITY_FRIEND_GUARD },
-    #endif
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = TRUE,
         .speciesName = _("JIGGLYPUFF"),
@@ -5760,7 +5759,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
         .abilities = { ABILITY_LEVITATE, ABILITY_COMPETITIVE, ABILITY_FUR_COAT },
-    #endif
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = TRUE,
         .speciesName = _("WIGGLYTUFF"),
@@ -16347,9 +16345,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sScytherLevelUpLearnset,
         .teachableLearnset = sScytherTeachableLearnset,
         .eggMoveLearnset = sScytherEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_METAL_COAT, SPECIES_SCIZOR}
-                                {EVO_ITEM, ITEM_HARD_STONE, SPECIES_KLEAVOR}
-                            ),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_METAL_COAT, SPECIES_SCIZOR},
+                                {EVO_ITEM, ITEM_HARD_STONE, SPECIES_KLEAVOR}),
     },
 
 #if P_GEN_2_CROSS_EVOS

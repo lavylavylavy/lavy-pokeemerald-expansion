@@ -71,7 +71,7 @@ SINGLE_BATTLE_TEST("Skill Swap fails if user or target has an ability that can't
     enum Ability ability;
 
     PARAMETRIZE { species = SPECIES_SHEDINJA; ability = ABILITY_WONDER_GUARD; }
-    PARAMETRIZE { species = SPECIES_ARCEUS; ability = ABILITY_MULTITYPE; }
+    PARAMETRIZE { species = SPECIES_ARCEUS; ability = ABILITY_OMNIPOTENT; }
     PARAMETRIZE { species = SPECIES_ZORUA; ability = ABILITY_ILLUSION; }
     PARAMETRIZE { species = SPECIES_DARMANITAN; ability = ABILITY_ZEN_MODE; }
     PARAMETRIZE { species = SPECIES_AEGISLASH; ability = ABILITY_STANCE_CHANGE; }

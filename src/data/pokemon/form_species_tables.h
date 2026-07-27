@@ -1323,23 +1323,20 @@ static const u16 sScolipedeFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_VENIPEDE
 
-#if P_FAMILY_PETILIL
 static const u16 sPetililFormSpeciesIdTable[] = {
-    SPECIES_PETILIL
-    SPECIES_PETILIL_REGION
-#endif
+    SPECIES_PETILIL,
+    SPECIES_PETILIL_REGION,
     FORM_SPECIES_END,
 };
 static const u16 sLilligantFormSpeciesIdTable[] = {
     SPECIES_LILLIGANT,
-    SPECIES_LILLIGANT_REGION_FEMME
-    SPECIES_LILLIGANT_REGION_MASC
+    SPECIES_LILLIGANT_REGION_FEMME,
+    SPECIES_LILLIGANT_REGION_MASC,
 #if P_HISUIAN_FORMS
     SPECIES_LILLIGANT_HISUI,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_PETILIL
 
 #if P_FAMILY_BASCULIN
 static const u16 sBasculinFormSpeciesIdTable[] = {

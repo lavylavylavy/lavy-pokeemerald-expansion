@@ -247,7 +247,6 @@ const struct SpeciesInfo gSpeciesInfo[] =
     },
     */
 
-};
 [SPECIES_PETILIL_REGION] =
     {
         .baseHP        = 60,
@@ -319,12 +318,11 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .teachableLearnset = sPetililTeachableLearnset,
         .eggMoveLearnset = sPetililEggMoveLearnset,
         .formSpeciesIdTable = sPetililFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SHINY_STONE, SPECIES_LILLIGANT_REGION_FEMME}
-                            #if P_HISUIAN_FORMS
-                                ,{EVO_ITEM, ITEM_MOON_STONE, SPECIES_LILLIGANT_REGION_MASC}
-                            #endif
-                            ),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SHINY_STONE, SPECIES_LILLIGANT_REGION_FEMME},
+                                {EVO_ITEM, ITEM_MOON_STONE, SPECIES_LILLIGANT_REGION_MASC},
+                            )
     },
+
 [SPECIES_LILLIGANT_REGION_FEMME] =
     {
         .baseHP        = 70,
@@ -392,6 +390,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .teachableLearnset = sLilligantTeachableLearnset,
         .formSpeciesIdTable = sLilligantFormSpeciesIdTable,
     },
+
 [SPECIES_LILLIGANT_REGION_MASC] =
     {
         .baseHP        = 80,
@@ -455,7 +454,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .teachableLearnset = sLilligantHisuiTeachableLearnset,
         .formSpeciesIdTable = sLilligantFormSpeciesIdTable,
     },
-    [SPECIES_SNIVY_REGION] =
+
+[SPECIES_SNIVY_REGION] =
     {
         .baseHP        = 57,
         .baseAttack    = 50,
@@ -525,7 +525,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_SERVINE_REGION}),
     },
 
-    [SPECIES_SERVINE_REGION] =
+[SPECIES_SERVINE_REGION] =
     {
         .baseHP        = 83,
         .baseAttack    = 60,
@@ -598,7 +598,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .formSpeciesIdTable = sServineFormSpeciesIdTable
     },
 
-    [SPECIES_SERPERIOR_REGION] =
+[SPECIES_SERPERIOR_REGION] =
     {
         .baseHP        = 108,
         .baseAttack    = 80,

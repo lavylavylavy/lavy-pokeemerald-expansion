@@ -29,15 +29,15 @@ SINGLE_BATTLE_TEST("Entrainment changes the target's Ability to match the user's
 SINGLE_BATTLE_TEST("Entrainment fails if the user's ability has cantBeCopied flag")
 {
     GIVEN {
-        ASSUME(gAbilitiesInfo[ABILITY_MULTITYPE].cantBeCopied);
-        PLAYER(SPECIES_ARCEUS)   { Ability(ABILITY_MULTITYPE); }
+        ASSUME(gAbilitiesInfo[ABILITY_OMNIPOTENT].cantBeCopied);
+        PLAYER(SPECIES_ARCEUS)   { Ability(ABILITY_OMNIPOTENT); }
         OPPONENT(SPECIES_WOBBUFFET) { Ability(ABILITY_SHADOW_TAG); }
     } WHEN {
         TURN { MOVE(player, MOVE_ENTRAINMENT); }
     } SCENE {
         MESSAGE("But it failed!");
     } THEN {
-        EXPECT(player->ability == ABILITY_MULTITYPE);
+        EXPECT(player->ability == ABILITY_OMNIPOTENT);
         EXPECT(opponent->ability == ABILITY_SHADOW_TAG);
     }
 }
@@ -45,16 +45,16 @@ SINGLE_BATTLE_TEST("Entrainment fails if the user's ability has cantBeCopied fla
 SINGLE_BATTLE_TEST("Entrainment fails if the target's ability has cantBeOverwritten flag")
 {
     GIVEN {
-        ASSUME(gAbilitiesInfo[ABILITY_MULTITYPE].cantBeOverwritten);
+        ASSUME(gAbilitiesInfo[ABILITY_OMNIPOTENT].cantBeOverwritten);
         PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); }
-        OPPONENT(SPECIES_ARCEUS)  { Ability(ABILITY_MULTITYPE); }
+        OPPONENT(SPECIES_ARCEUS)  { Ability(ABILITY_OMNIPOTENT); }
     } WHEN {
         TURN { MOVE(player, MOVE_ENTRAINMENT); }
     } SCENE {
         MESSAGE("But it failed!");
     } THEN {
         EXPECT(player->ability   == ABILITY_TELEPATHY);
-        EXPECT(opponent->ability == ABILITY_MULTITYPE);
+        EXPECT(opponent->ability == ABILITY_OMNIPOTENT);
     }
 }
 

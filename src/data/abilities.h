@@ -903,9 +903,9 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 6,
     },
 
-    [ABILITY_MULTITYPE] =
+    [ABILITY_OMNIPOTENT] =
     {
-        .name = _("Multitype"),
+        .name = _("OMNIPOTENT"),
         .description = COMPOUND_STRING("Changes type to its Plate."),
         .aiRating = 8,
         .cantBeCopied = TRUE,

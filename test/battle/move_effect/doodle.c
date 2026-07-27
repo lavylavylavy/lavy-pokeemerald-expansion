@@ -87,7 +87,7 @@ DOUBLE_BATTLE_TEST("Doodle fails if ally's ability can't be suppressed")
     u32 species;
     enum Ability ability;
 
-    PARAMETRIZE { species = SPECIES_ARCEUS; ability = ABILITY_MULTITYPE; }
+    PARAMETRIZE { species = SPECIES_ARCEUS; ability = ABILITY_OMNIPOTENT; }
     PARAMETRIZE { species = SPECIES_DARMANITAN; ability = ABILITY_ZEN_MODE; }
     PARAMETRIZE { species = SPECIES_AEGISLASH; ability = ABILITY_STANCE_CHANGE; }
     PARAMETRIZE { species = SPECIES_MINIOR; ability = ABILITY_SHIELDS_DOWN; }
