@@ -5595,7 +5595,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+    #if P_UPDATED_ABILITIES >= GEN_6
         .abilities = { ABILITY_LEVITATE, ABILITY_COMPETITIVE, ABILITY_FRIEND_GUARD },
+    #else
+        .abilities = { ABILITY_CUTE_CHARM, ABILITY_NONE, ABILITY_FRIEND_GUARD },
     #endif
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = TRUE,
@@ -5670,7 +5673,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
+    #if P_UPDATED_ABILITIES >= GEN_6
         .abilities = { ABILITY_LEVITATE, ABILITY_COMPETITIVE, ABILITY_FRIEND_GUARD },
+    #else
+        .abilities = { ABILITY_CUTE_CHARM, ABILITY_NONE, ABILITY_FRIEND_GUARD },
+    #endif
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = TRUE,
         .speciesName = _("JIGGLYPUFF"),
@@ -5758,7 +5765,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
+    #if P_UPDATED_ABILITIES >= GEN_6
         .abilities = { ABILITY_LEVITATE, ABILITY_COMPETITIVE, ABILITY_FUR_COAT },
+    #else
+        .abilities = { ABILITY_CUTE_CHARM, ABILITY_NONE, ABILITY_FRISK },
+    #endif
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = TRUE,
         .speciesName = _("WIGGLYTUFF"),
