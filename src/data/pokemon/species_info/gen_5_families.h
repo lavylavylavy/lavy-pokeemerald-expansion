@@ -12491,8 +12491,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .eggMoveLearnset = sLarvestaEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_VOLCARONA}, 
             {EVO_ITEM, ITEM_SUN_STONE, SPECIES_SLITHER_WING},
-            {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_IRON_MOTH},
-        )
+            {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_IRON_MOTH}),
     },
 
     [SPECIES_VOLCARONA] =

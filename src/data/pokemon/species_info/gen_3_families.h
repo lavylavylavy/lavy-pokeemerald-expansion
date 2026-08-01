@@ -2816,10 +2816,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sKirliaLevelUpLearnset,
         .teachableLearnset = sKirliaTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GARDEVOIR}, {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_IRON_VALIANT},
-                            #if P_GEN_4_CROSS_EVOS
-                                {EVO_ITEM, ITEM_DAWN_STONE, SPECIES_GALLADE},
-                            #endif
-                            ),
+                                {EVO_ITEM, ITEM_DAWN_STONE, SPECIES_GALLADE}),
     },
 
     [SPECIES_GARDEVOIR] =
